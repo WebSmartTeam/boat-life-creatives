@@ -60,9 +60,9 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <p>&copy; 2025 Boat Life Creatives. All rights reserved.</p>
             <div className="footer-bottom-links">
-              <span>We Paint. You Relax.</span>
+              <span>Professional Painting Services</span>
               <span>•</span>
-              <span>Guaranteed for 3 years</span>
+              <span>Fully Insured</span>
             </div>
           </div>
         </div>

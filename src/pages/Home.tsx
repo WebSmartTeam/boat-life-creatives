@@ -13,21 +13,20 @@ const Home = () => {
               <h1 className="fade-in">Turn Your Weathered Boat Into A Stunning Masterpiece</h1>
               <p className="hero-subtitle fade-in">
                 15 years painting boats and houses around the area. I show up when I say I will, 
-                do the job properly, and clean up after myself. 500+ successful transformations 
-                with our 3-year guarantee.
+                do the job properly, and clean up after myself. Quality work at fair prices.
               </p>
               <div className="hero-features fade-in">
                 <div className="feature-item">
-                  <span className="feature-icon">⚡</span>
-                  <span>48-Hour Turnaround</span>
+                  <span className="feature-icon">🎨</span>
+                  <span>15 Years Experience</span>
                 </div>
                 <div className="feature-item">
-                  <span className="feature-icon">💎</span>
-                  <span>Showroom Quality</span>
+                  <span className="feature-icon">✓</span>
+                  <span>Fully Insured</span>
                 </div>
                 <div className="feature-item">
-                  <span className="feature-icon">🛡️</span>
-                  <span>3-Year Guarantee</span>
+                  <span className="feature-icon">📞</span>
+                  <span>Free Quotes</span>
                 </div>
               </div>
               <div className="hero-cta fade-in">
