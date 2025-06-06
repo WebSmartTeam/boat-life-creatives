@@ -19,7 +19,7 @@ const Home = () => {
             <div className="hero-content">
               <div className="hero-badge">Boat Painter • 15+ Years Experience</div>
               <h1 className="fade-in">I Paint Boats. Properly.</h1>
-              <p className="hero-subtitle fade-in">Hull work, anti-fouling, varnishing, full boat resprays. Plus houses and commercial jobs when I'm not on the water. Call Pete on 07453 817030.</p>
+              <p className="hero-subtitle fade-in">Hull work, anti-fouling, varnishing, full boat resprays. Plus houses and commercial jobs when I'm not on the water. Call 07453 817030.</p>
               <div className="hero-features">
                 <div className="feature-item">🎨 Hull Restoration</div>
                 <div className="feature-item">⚓ Anti-Fouling</div>
@@ -160,7 +160,7 @@ const Home = () => {
             <h2>Need A Quote?</h2>
             <p>Call me for a chat about your job. Free quotes, fair prices, guaranteed work.</p>
             <div className="booking-actions">
-              <a href="tel:07453817030" className="btn btn-primary btn-large">Call Pete: 07453 817030</a>
+              <a href="tel:07453817030" className="btn btn-primary btn-large">Call: 07453 817030</a>
               <Link to="/booking" className="btn btn-secondary">Send Message</Link>
             </div>
           </div>
