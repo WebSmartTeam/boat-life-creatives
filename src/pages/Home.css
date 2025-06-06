@@ -6,17 +6,16 @@
 
 /* Editorial Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   background: 
-    radial-gradient(circle at 20% 20%, var(--electric-orange) 0%, transparent 40%),
-    radial-gradient(circle at 80% 80%, var(--neon-blue) 0%, transparent 40%),
-    radial-gradient(circle at 40% 60%, var(--vibrant-red) 0%, transparent 30%),
-    var(--deep-black);
+    linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%),
+    radial-gradient(circle at 85% 15%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.08) 0%, transparent 50%);
   position: relative;
   overflow: hidden;
-  padding: var(--space-xxl) 0;
+  padding: var(--space-xl) 0;
 }
 
 .hero-grid {
@@ -36,30 +35,29 @@
 
 .hero-badge {
   display: inline-block;
-  background: linear-gradient(45deg, var(--electric-orange), var(--vibrant-red));
-  color: var(--deep-black);
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  font-weight: 900;
-  margin-bottom: var(--space-xl);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border-radius: 0;
-  border: 3px solid var(--paint-white);
-  box-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+  background: var(--electric-orange);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: var(--space-lg);
+  text-transform: none;
+  letter-spacing: 0.02em;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
 }
 
 .hero-content h1 {
   margin-bottom: var(--space-lg);
-  line-height: 0.8;
-  text-shadow: 0 0 50px rgba(255, 107, 53, 0.3);
+  line-height: 1.1;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  color: var(--paint-silver);
-  margin-bottom: var(--space-xxl);
-  line-height: 1.5;
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  color: #5A5A5C;
+  margin-bottom: var(--space-xl);
+  line-height: 1.6;
   font-weight: 400;
   max-width: 600px;
 }
@@ -72,24 +70,24 @@
 }
 
 .feature-item {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--paint-white);
-  border: 2px solid var(--electric-orange);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2C2B28;
+  border: 1px solid rgba(255, 107, 53, 0.3);
   transition: var(--transition-smooth);
-  text-transform: uppercase;
-  border-radius: 0;
-  box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+  text-transform: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .feature-item:hover {
   background: var(--electric-orange);
-  color: var(--deep-black);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.5);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
 .hero-cta {

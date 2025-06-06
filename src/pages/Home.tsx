@@ -6,20 +6,18 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
-        {/* Paint Background Elements */}
-        <div className="paint-splatter paint-splatter-1"></div>
-        <div className="paint-splatter paint-splatter-2"></div>
-        <div className="brush-stroke brush-stroke-1"></div>
-        <div className="paint-drip paint-drip-1"></div>
-        <div className="color-swatch swatch-orange"></div>
-        <div className="color-swatch swatch-blue"></div>
+        {/* Modern Geometric Shapes */}
+        <div className="modern-shape shape-circle"></div>
+        <div className="modern-shape shape-triangle"></div>
+        <div className="modern-shape shape-square"></div>
+        <div className="modern-shape shape-hexagon"></div>
         
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
-              <div className="hero-badge">Marine Paint Specialist</div>
-              <h1 className="fade-in">PAINT.<br/>CREATE.<br/>TRANSFORM.</h1>
-              <p className="hero-subtitle fade-in">15 years turning rust into masterpieces. Hull restoration, anti-fouling, complete yacht makeovers. Your boat deserves better than average.</p>
+              <div className="hero-badge">🚤 Marine Paint Specialists</div>
+              <h1 className="fade-in">Professional Boat Painting</h1>
+              <p className="hero-subtitle fade-in">15 years turning weathered hulls into showroom condition. Expert marine coatings, anti-fouling, and complete yacht transformations. Your boat deserves the best.</p>
               <div className="hero-features">
                 <div className="feature-item">🎨 Hull Restoration</div>
                 <div className="feature-item">⚓ Anti-Fouling</div>
