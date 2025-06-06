@@ -13,6 +13,8 @@ I am a child farmer specialising in developing the Boat Life Creatives website -
 **Website:** www.boatlifecreatives.co.uk  
 **Email:** info@boatlifecreatives.co.uk  
 **Phone:** 07453 817030
+**GitHub:** https://github.com/WebSmartTeam/boat-life-creatives
+**Live URL:** [Pending - awaiting Netlify deployment from Master Claude]
 
 ### Business Services:
 - **Marine:** Boat exteriors, interiors, hulls, anti-foul, refinishing
