@@ -11,7 +11,7 @@ const Header = () => {
         <div className="header-content">
           <Link to="/" className="logo">
             <img 
-              src="/images/logo/20250606_1506_Boat Life Logo Design_simple_compose_01jx29f1a2efxttd8qd2s8kz0v.png" 
+              src="/images/logo/New LOGO.png" 
               alt="Boat Life Creatives" 
               className="logo-image"
             />

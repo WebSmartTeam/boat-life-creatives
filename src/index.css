@@ -1,68 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@300;400;500;600;700&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Skinn.be Inspired Colors - Muted Base */
+  --primary-orange: #F27C2A;
+  --light-neutral: #EFE8DE;
+  --dark-neutral: #2C2B28;
+  --soft-white: #FEFEFE;
+  --warm-grey: #8B8B8B;
+  --deep-charcoal: #1A1A1A;
+  
+  /* Typography - Editorial Style */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Weights for Editorial Feel */
+  --weight-light: 200;
+  --weight-regular: 300;
+  --weight-medium: 400;
+  --weight-semibold: 500;
+  --weight-bold: 600;
+  --weight-heavy: 700;
+  
+  /* Generous Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --space-xxl: 8rem;
+  
+  /* Smooth Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  --transition-quick: all 0.2s ease;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a:hover {
-  color: #535bf2;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  line-height: 1.7;
+  color: var(--dark-neutral);
+  background-color: var(--soft-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+#root {
   min-height: 100vh;
 }
 
+/* Large, Clean Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-medium);
+  line-height: 1.2;
+  color: var(--dark-neutral);
+  letter-spacing: -0.02em;
+}
+
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: var(--weight-light);
+  margin-bottom: var(--space-md);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+h2 {
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-weight: var(--weight-regular);
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: var(--weight-medium);
+  margin-bottom: var(--space-sm);
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+  color: var(--warm-grey);
+  margin-bottom: var(--space-sm);
+}
+
+.lead {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: var(--weight-regular);
+  color: var(--dark-neutral);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--dark-neutral);
+  text-decoration: none;
+  transition: var(--transition-quick);
+}
+
+a:hover {
+  color: var(--primary-orange);
+}
+
+/* Clean Button Design */
+button, .btn {
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  padding: 0.9rem 2.2rem;
+  border: 1px solid var(--dark-neutral);
+  background: transparent;
+  color: var(--dark-neutral);
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: var(--transition-smooth);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  border-radius: 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+button:hover, .btn:hover {
+  background: var(--dark-neutral);
+  color: var(--soft-white);
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--primary-orange);
+  border-color: var(--primary-orange);
+  color: var(--soft-white);
+}
+
+.btn-primary:hover {
+  background: var(--dark-neutral);
+  border-color: var(--dark-neutral);
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Full-width Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-full {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.image-full:hover {
+  transform: scale(1.01);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-sm);
   }
-  a:hover {
-    color: #747bff;
+  
+  .section {
+    padding: var(--space-lg) 0;
   }
-  button {
-    background-color: #f9f9f9;
+  
+  .grid {
+    gap: var(--space-md);
   }
 }

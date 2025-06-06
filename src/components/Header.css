@@ -6,21 +6,20 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(44, 43, 40, 0.1);
+  background-color: rgba(254, 254, 254, 0.96);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(44, 43, 40, 0.08);
   transition: var(--transition-smooth);
+  padding: 0.5rem 0;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-md) 0;
   max-width: 1400px;
   margin: 0 auto;
-  padding-left: var(--space-md);
-  padding-right: var(--space-md);
+  padding: 0 var(--space-md);
 }
 
 .logo {
@@ -30,56 +29,43 @@
 }
 
 .logo-image {
-  height: 140px;
+  height: 60px;
   width: auto;
-  max-width: 350px;
+  max-width: 200px;
   transition: var(--transition-smooth);
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
 }
 
 .logo-image:hover {
-  transform: scale(1.08);
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+  opacity: 0.8;
 }
 
-/* Navigation */
+/* Minimal Clean Navigation */
 .nav {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
+  gap: var(--space-lg);
+  position: absolute;
+  right: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-link {
-  color: var(--dark-neutral);
+  color: var(--warm-grey);
   text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  font-size: 0.95rem;
+  font-weight: var(--weight-regular);
+  font-size: 0.9rem;
   letter-spacing: 0.02em;
-  transition: var(--transition-smooth);
-  position: relative;
-  padding: var(--space-xs) 0;
+  transition: var(--transition-quick);
+  text-transform: lowercase;
+  font-family: var(--font-body);
 }
 
 .nav-link:hover {
-  color: var(--primary-orange);
+  color: var(--dark-neutral);
 }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--primary-orange);
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-/* Dropdown */
+/* Clean Dropdown */
 .nav-dropdown {
   position: relative;
 }
@@ -94,48 +80,51 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: var(--white);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  background-color: var(--soft-white);
+  box-shadow: 0 8px 32px rgba(44, 43, 40, 0.1);
   padding: var(--space-sm);
-  min-width: 200px;
+  min-width: 180px;
   opacity: 0;
   transform: translateY(-10px);
   visibility: hidden;
   transition: var(--transition-smooth);
-  margin-top: var(--space-xs);
+  margin-top: 0.5rem;
+  border: 1px solid rgba(44, 43, 40, 0.05);
 }
 
 .dropdown-content a {
   display: block;
-  color: var(--dark-neutral);
+  color: var(--warm-grey);
   text-decoration: none;
-  padding: var(--space-xs) var(--space-sm);
-  border-radius: 4px;
-  transition: var(--transition-smooth);
+  padding: 0.5rem 0.8rem;
+  transition: var(--transition-quick);
+  font-size: 0.85rem;
+  text-transform: lowercase;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--light-neutral);
-  color: var(--primary-orange);
+  color: var(--dark-neutral);
+  background-color: rgba(239, 232, 222, 0.3);
 }
 
-/* Booking Button */
+/* Clean Booking Button */
 .booking-btn {
-  background-color: var(--primary-orange);
-  color: var(--white) !important;
-  padding: var(--space-xs) var(--space-sm);
-  border-radius: 6px;
-  margin-left: var(--space-sm);
+  background-color: var(--dark-neutral);
+  color: var(--soft-white) !important;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid var(--dark-neutral);
+  font-size: 0.85rem;
+  font-weight: var(--weight-medium);
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  transition: var(--transition-smooth);
+  margin-left: var(--space-md);
 }
 
 .booking-btn:hover {
-  background-color: var(--dark-neutral);
-  transform: translateY(-2px);
-}
-
-.booking-btn::after {
-  display: none;
+  background-color: var(--primary-orange);
+  border-color: var(--primary-orange);
+  transform: translateY(-1px);
 }
 
 /* Mobile Menu Toggle */
