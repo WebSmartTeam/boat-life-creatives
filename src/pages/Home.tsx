@@ -17,9 +17,9 @@ const Home = () => {
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
-              <div className="hero-badge">Boat Painter • 15+ Years Experience</div>
-              <h1 className="fade-in">I Paint Boats. Properly.</h1>
-              <p className="hero-subtitle fade-in">Hull work, anti-fouling, varnishing, full boat resprays. Plus houses and commercial jobs when I'm not on the water. Call 07453 817030.</p>
+              <div className="hero-badge">Marine Paint Specialist</div>
+              <h1 className="fade-in">PAINT.<br/>CREATE.<br/>TRANSFORM.</h1>
+              <p className="hero-subtitle fade-in">15 years turning rust into masterpieces. Hull restoration, anti-fouling, complete yacht makeovers. Your boat deserves better than average.</p>
               <div className="hero-features">
                 <div className="feature-item">🎨 Hull Restoration</div>
                 <div className="feature-item">⚓ Anti-Fouling</div>

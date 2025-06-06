@@ -6,16 +6,17 @@
 
 /* Editorial Hero Section */
 .hero {
-  min-height: 85vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background: 
-    radial-gradient(circle at 20% 30%, rgba(242, 124, 42, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(44, 43, 40, 0.05) 0%, transparent 50%),
-    #f8f8f8;
+    radial-gradient(circle at 20% 20%, var(--electric-orange) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, var(--neon-blue) 0%, transparent 40%),
+    radial-gradient(circle at 40% 60%, var(--vibrant-red) 0%, transparent 30%),
+    var(--deep-black);
   position: relative;
   overflow: hidden;
-  padding: var(--space-xl) 0;
+  padding: var(--space-xxl) 0;
 }
 
 .hero-grid {
@@ -35,30 +36,32 @@
 
 .hero-badge {
   display: inline-block;
-  background-color: var(--primary-orange);
-  color: white;
-  padding: 0.5rem 1.2rem;
-  font-size: 0.9rem;
-  font-weight: var(--weight-medium);
-  margin-bottom: var(--space-lg);
-  text-transform: none;
-  letter-spacing: 0;
-  border-radius: 4px;
-  border: 2px solid #d66821;
+  background: linear-gradient(45deg, var(--electric-orange), var(--vibrant-red));
+  color: var(--deep-black);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: var(--space-xl);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 0;
+  border: 3px solid var(--paint-white);
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
 }
 
 .hero-content h1 {
-  margin-bottom: var(--space-sm);
-  color: var(--dark-neutral);
-  line-height: 1.1;
+  margin-bottom: var(--space-lg);
+  line-height: 0.8;
+  text-shadow: 0 0 50px rgba(255, 107, 53, 0.3);
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  color: var(--warm-grey);
-  margin-bottom: var(--space-xl);
-  line-height: 1.6;
-  font-weight: var(--weight-regular);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: var(--paint-silver);
+  margin-bottom: var(--space-xxl);
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 600px;
 }
 
 .hero-features {
@@ -69,20 +72,24 @@
 }
 
 .feature-item {
-  background: white;
-  padding: 0.4rem 1rem;
-  font-size: 0.9rem;
-  font-weight: var(--weight-medium);
-  color: var(--dark-neutral);
-  border: 2px solid #ddd;
-  transition: var(--transition-quick);
-  text-transform: none;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--paint-white);
+  border: 2px solid var(--electric-orange);
+  transition: var(--transition-smooth);
+  text-transform: uppercase;
+  border-radius: 0;
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
 }
 
 .feature-item:hover {
-  color: var(--primary-orange);
-  border-color: var(--primary-orange);
+  background: var(--electric-orange);
+  color: var(--deep-black);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.5);
 }
 
 .hero-cta {
