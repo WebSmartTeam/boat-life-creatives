@@ -120,6 +120,38 @@
 /* SERVICES SECTION */
 .services {
   position: relative;
+  background: linear-gradient(135deg, var(--warm-white) 0%, #FFF5E6 50%, var(--light-grey) 100%);
+  overflow: hidden;
+}
+
+/* Service Section Background Shapes */
+.services::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 60%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(242, 124, 42, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.services::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -15%;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(ellipse, rgba(122, 132, 113, 0.08) 0%, transparent 60%);
+  transform: rotate(-15deg);
+  z-index: 0;
+}
+
+.services .container {
+  position: relative;
+  z-index: 1;
 }
 
 .section-header {
@@ -141,24 +173,10 @@
 
 .service-card {
   height: 100%;
-  border: none;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: visible;
-}
-
-/* Marine Service - Ocean Blue Background */
-.service-card:nth-child(1) {
-  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-}
-
-/* Residential Service - Warm Sage Background */
-.service-card:nth-child(2) {
-  background: linear-gradient(135deg, #F1F8E9 0%, #DCEDC8 100%);
-}
-
-/* Commercial Service - Professional Grey Background */
-.service-card:nth-child(3) {
-  background: linear-gradient(135deg, #F5F5F5 0%, #E0E0E0 100%);
 }
 
 .service-image {
