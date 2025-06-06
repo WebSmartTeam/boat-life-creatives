@@ -48,7 +48,7 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="services section bg-light">
+      <section className="services section">
         <div className="container">
           <div className="section-header text-center">
             <h2 className="fade-in">What We Do</h2>
@@ -194,7 +194,7 @@ const Home = () => {
           
           <div className="work-gallery grid grid-3">
             <div className="work-item fade-in">
-              <div className="work-image image-frame subtle-border">
+              <div className="work-image">
                 <img 
                   src="/images/before-after/20250605_2208_Restoration Transformation Showcase_simple_compose_01jx0f80qxfmy8m1h7w7kk521p.png" 
                   alt="Before transformation" 
@@ -202,7 +202,7 @@ const Home = () => {
               </div>
             </div>
             <div className="work-item fade-in">
-              <div className="work-image image-frame subtle-border">
+              <div className="work-image">
                 <img 
                   src="/images/before-after/20250606_1648_Boat Hull Transformation_simple_compose_01jx2fak7pe1aamq22f82hph8b.png" 
                   alt="Boat hull transformation" 
@@ -210,7 +210,7 @@ const Home = () => {
               </div>
             </div>
             <div className="work-item fade-in">
-              <div className="work-image image-frame subtle-border">
+              <div className="work-image">
                 <img 
                   src="/images/before-after/20250606_1653_Stairwell Transformation_simple_compose_01jx2fjfp0e8fsmq1c9pr9vt4w.png" 
                   alt="Stairwell transformation" 
