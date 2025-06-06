@@ -9,13 +9,13 @@ const Home = () => {
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
-              <div className="hero-badge">🚤 Marine Painting Specialists</div>
-              <h1 className="fade-in">Expert Boat Painting & Marine Refinishing</h1>
-              <p className="hero-subtitle fade-in">Professional marine painting services. Hull restoration, anti-fouling, interior refinishing and complete yacht transformations.</p>
+              <div className="hero-badge">Boat Painter • 15+ Years Experience</div>
+              <h1 className="fade-in">I Paint Boats. Properly.</h1>
+              <p className="hero-subtitle fade-in">Hull work, anti-fouling, varnishing, full boat resprays. Plus houses and commercial jobs when I'm not on the water. Call Pete on 07453 817030.</p>
               <div className="hero-features">
-                <div className="feature-item">⚓ Hull Restoration</div>
-                <div className="feature-item">🎨 Marine Coatings</div>
-                <div className="feature-item">🏠 Plus Residential & Commercial</div>
+                <div className="feature-item">✓ Hull Restoration</div>
+                <div className="feature-item">✓ Anti-Fouling</div>
+                <div className="feature-item">✓ Houses & Offices Too</div>
               </div>
               <div className="hero-cta fade-in">
                 <Link to="/booking" className="btn btn-primary btn-large">Get Free Quote</Link>
@@ -23,11 +23,11 @@ const Home = () => {
               </div>
             </div>
             <div className="hero-visual">
-              <div className="hero-image-main float-animation">
+              <div className="hero-image-main">
                 <img 
                   src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5barefj8db6kg1mg1dqf.png"
-                  alt="Professional yacht refinishing showcasing expert marine painting"
-                  className="hero-image glass-effect"
+                  alt="Boat hull painting work in progress"
+                  className="hero-image"
                 />
               </div>
             </div>
@@ -38,8 +38,8 @@ const Home = () => {
       {/* Services Section */}
       <section className="services section-large">
         <div className="container">
-          <h2 className="section-title">Marine Painting Experts</h2>
-          <p className="section-subtitle">Specialising in professional boat painting with additional residential and commercial services</p>
+          <h2 className="section-title">What I Do</h2>
+          <p className="section-subtitle">Mainly boats, but I'll paint your house too if you need it doing properly</p>
           <div className="services-grid grid grid-3">
             
             <div className="service-card fade-in">
@@ -50,15 +50,15 @@ const Home = () => {
                 />
               </div>
               <div className="service-content">
-                <h3>Marine Painting</h3>
-                <p>Boat exteriors, interiors, hulls, anti-foul and refinishing. Expert marine coatings for lasting protection and stunning aesthetics.</p>
+                <h3>Boat Painting</h3>
+                <p>15 years painting boats of all sizes. Hull work, anti-fouling, varnish, full resprays. I know marine paints inside out and what works in saltwater.</p>
                 <ul className="service-features">
-                  <li>Hull restoration & refinishing</li>
-                  <li>Anti-foul applications</li>
-                  <li>Interior cabin work</li>
-                  <li>Marine-grade coatings</li>
+                  <li>Hull stripping & repainting</li>
+                  <li>Anti-foul - done right</li>
+                  <li>Cabin interiors</li>
+                  <li>Deck work & varnishing</li>
                 </ul>
-                <Link to="/services/marine" className="service-link">Learn More</Link>
+                <Link to="/services/marine" className="service-link">See Boat Work</Link>
               </div>
             </div>
 
@@ -70,15 +70,15 @@ const Home = () => {
                 />
               </div>
               <div className="service-content">
-                <h3>Residential Painting</h3>
-                <p>Interiors, feature walls, and full property refresh. Transform your home with our creative, professional approach.</p>
+                <h3>House Painting</h3>
+                <p>When I'm not at the marina, I paint houses. Full rooms, single walls, ceilings, exteriors. Quality materials, tidy work, fair prices.</p>
                 <ul className="service-features">
-                  <li>Feature walls & accent painting</li>
-                  <li>Full room renovations</li>
-                  <li>Exterior property work</li>
-                  <li>Color consultation</li>
+                  <li>Interior rooms & walls</li>
+                  <li>Ceilings & woodwork</li>
+                  <li>Exterior house painting</li>
+                  <li>Prep work included</li>
                 </ul>
-                <Link to="/services/residential" className="service-link">Learn More</Link>
+                <Link to="/services/residential" className="service-link">See House Work</Link>
               </div>
             </div>
 
@@ -90,15 +90,15 @@ const Home = () => {
                 />
               </div>
               <div className="service-content">
-                <h3>Commercial Spaces</h3>
-                <p>Offices, studios, and creative spaces with minimal downtime. Professional results that keep your business running.</p>
+                <h3>Commercial Work</h3>
+                <p>Offices, shops, workshops. I work evenings and weekends so your business doesn't stop. Quick, tidy, good value.</p>
                 <ul className="service-features">
-                  <li>Out-of-hours painting</li>
-                  <li>Minimal disruption plans</li>
-                  <li>Creative workspace design</li>
-                  <li>Quick turnaround</li>
+                  <li>Weekend & evening work</li>
+                  <li>Shops & office spaces</li>
+                  <li>Industrial painting</li>
+                  <li>Fast turnaround</li>
                 </ul>
-                <Link to="/services/commercial" className="service-link">Learn More</Link>
+                <Link to="/services/commercial" className="service-link">See Commercial Work</Link>
               </div>
             </div>
           </div>
@@ -110,20 +110,20 @@ const Home = () => {
         <div className="container">
           <div className="grid grid-2">
             <div className="content-block">
-              <h2>Boat-ready. Home-perfect. Always Finished On Time.</h2>
-              <p>We blend creative execution with clean professionalism, positioning ourselves more like a design-forward brand than traditional tradespeople.</p>
+              <h2>Why Choose Me?</h2>
+              <p>15 years painting boats and houses around the area. I show up when I say I will, do the job properly, and clean up after myself.</p>
               <div className="features-list">
                 <div className="feature">
-                  <h4>⏱️ Punctual & Reliable</h4>
-                  <p>We respect your time and deliver exactly when promised.</p>
+                  <h4>✓ Turn Up On Time</h4>
+                  <p>I say Tuesday, I'm there Tuesday. Simple as that.</p>
                 </div>
                 <div className="feature">
-                  <h4>🎨 Creative Excellence</h4>
-                  <p>Design-forward approach with attention to every detail.</p>
+                  <h4>✓ Know My Materials</h4>
+                  <p>15 years experience with marine paints and what works.</p>
                 </div>
                 <div className="feature">
-                  <h4>🧽 Clean & Professional</h4>
-                  <p>Tidy work practices and complete site cleanup.</p>
+                  <h4>✓ Leave It Tidy</h4>
+                  <p>Dust sheets down, clean up after. Leave your place better than I found it.</p>
                 </div>
               </div>
             </div>
@@ -142,11 +142,11 @@ const Home = () => {
       <section className="quick-booking section-large">
         <div className="container">
           <div className="booking-content">
-            <h2>Booked in 3 minutes. Painted in 3 days. Guaranteed for 3 years.</h2>
-            <p>Ready to transform your space? Get an instant quote and book your site visit.</p>
+            <h2>Need A Quote?</h2>
+            <p>Call me for a chat about your job. Free quotes, fair prices, guaranteed work.</p>
             <div className="booking-actions">
-              <Link to="/booking" className="btn btn-primary btn-large">Get Instant Quote</Link>
-              <a href="tel:07453817030" className="btn btn-secondary">Call 07453 817030</a>
+              <a href="tel:07453817030" className="btn btn-primary btn-large">Call Pete: 07453 817030</a>
+              <Link to="/booking" className="btn btn-secondary">Send Message</Link>
             </div>
           </div>
         </div>
