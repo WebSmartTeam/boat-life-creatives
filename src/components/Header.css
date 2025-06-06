@@ -1,0 +1,204 @@
+/* Header - Skinn.be inspired minimal floating navigation */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(44, 43, 40, 0.1);
+  transition: var(--transition-smooth);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+  transition: var(--transition-smooth);
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.nav-link {
+  color: var(--dark-neutral);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: var(--transition-smooth);
+  position: relative;
+  padding: var(--space-xs) 0;
+}
+
+.nav-link:hover {
+  color: var(--primary-orange);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-orange);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Dropdown */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--white);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: var(--space-sm);
+  min-width: 200px;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: var(--transition-smooth);
+  margin-top: var(--space-xs);
+}
+
+.dropdown-content a {
+  display: block;
+  color: var(--dark-neutral);
+  text-decoration: none;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 4px;
+  transition: var(--transition-smooth);
+}
+
+.dropdown-content a:hover {
+  background-color: var(--light-neutral);
+  color: var(--primary-orange);
+}
+
+/* Booking Button */
+.booking-btn {
+  background-color: var(--primary-orange);
+  color: var(--white) !important;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 6px;
+  margin-left: var(--space-sm);
+}
+
+.booking-btn:hover {
+  background-color: var(--dark-neutral);
+  transform: translateY(-2px);
+}
+
+.booking-btn::after {
+  display: none;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-xs);
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 2px;
+  background-color: var(--dark-neutral);
+  margin: 3px 0;
+  transition: var(--transition-smooth);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    flex-direction: column;
+    padding: var(--space-md);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-smooth);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--light-neutral);
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    box-shadow: none;
+    background-color: var(--light-neutral);
+    margin-top: var(--space-xs);
+  }
+
+  .booking-btn {
+    margin-left: 0;
+    margin-top: var(--space-sm);
+  }
+}
