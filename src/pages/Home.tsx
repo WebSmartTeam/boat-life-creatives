@@ -9,13 +9,13 @@ const Home = () => {
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
-              <div className="hero-badge">✨ Premium Painting Services</div>
-              <h1 className="fade-in">Transform Your Space with Professional Excellence</h1>
-              <p className="hero-subtitle fade-in">We Paint. You Relax. Experience the difference of true craftsmanship.</p>
+              <div className="hero-badge">🚤 Marine Painting Specialists</div>
+              <h1 className="fade-in">Expert Boat Painting & Marine Refinishing</h1>
+              <p className="hero-subtitle fade-in">Professional marine painting services. Hull restoration, anti-fouling, interior refinishing and complete yacht transformations.</p>
               <div className="hero-features">
-                <div className="feature-item">🚤 Marine Specialists</div>
-                <div className="feature-item">🏠 Residential Experts</div>
-                <div className="feature-item">🏢 Commercial Solutions</div>
+                <div className="feature-item">⚓ Hull Restoration</div>
+                <div className="feature-item">🎨 Marine Coatings</div>
+                <div className="feature-item">🏠 Plus Residential & Commercial</div>
               </div>
               <div className="hero-cta fade-in">
                 <Link to="/booking" className="btn btn-primary btn-large">Get Free Quote</Link>
@@ -23,26 +23,12 @@ const Home = () => {
               </div>
             </div>
             <div className="hero-visual">
-              <div className="hero-image-grid">
-                <div className="hero-main-image">
-                  <img 
-                    src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5barefj8db6kg1mg1dqf.png"
-                    alt="Professional yacht refinishing"
-                    className="zoom-image"
-                  />
-                </div>
-                <div className="hero-secondary-images">
-                  <img 
-                    src="/images/residential/20250605_2203_Freshly Painted Spaces_simple_compose_01jx0eybf2e56ahkyqhj27f4ae.png"
-                    alt="Beautiful residential interior"
-                    className="zoom-image"
-                  />
-                  <img 
-                    src="/images/commercial/20250606_1639_Sleek Modern Office_simple_compose_01jx2ew9v0e9f8bk7cbqfbmz8q.png"
-                    alt="Modern office space"
-                    className="zoom-image"
-                  />
-                </div>
+              <div className="hero-image-main float-animation">
+                <img 
+                  src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5barefj8db6kg1mg1dqf.png"
+                  alt="Professional yacht refinishing showcasing expert marine painting"
+                  className="hero-image glass-effect"
+                />
               </div>
             </div>
           </div>
@@ -52,7 +38,8 @@ const Home = () => {
       {/* Services Section */}
       <section className="services section-large">
         <div className="container">
-          <h2 className="section-title">Our Specialities</h2>
+          <h2 className="section-title">Marine Painting Experts</h2>
+          <p className="section-subtitle">Specialising in professional boat painting with additional residential and commercial services</p>
           <div className="services-grid grid grid-3">
             
             <div className="service-card fade-in">

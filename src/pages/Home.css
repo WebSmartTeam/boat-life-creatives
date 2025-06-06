@@ -9,18 +9,22 @@
   min-height: 85vh;
   display: flex;
   align-items: center;
-  background-color: var(--light-neutral);
+  background: linear-gradient(135deg, var(--light-neutral) 0%, rgba(239, 232, 222, 0.8) 100%);
   position: relative;
   overflow: hidden;
-  padding: var(--space-xxl) 0;
+  padding: var(--space-xl) 0;
+  backdrop-filter: blur(10px);
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: var(--space-xl);
   position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
 }
 
 .hero-content {
@@ -86,17 +90,36 @@
 /* Clean Hero Visual */
 .hero-visual {
   position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-main {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(44, 43, 40, 0.15);
 }
 
 .hero-image {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
   transition: var(--transition-smooth);
 }
 
 .hero-image:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+}
+
+.glass-effect {
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Services Section */
@@ -107,10 +130,20 @@
 
 .section-title {
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: var(--weight-light);
   color: var(--dark-neutral);
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: var(--warm-grey);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .services-grid {
@@ -118,19 +151,28 @@
 }
 
 .service-card {
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: var(--space-lg);
   transition: var(--transition-smooth);
   overflow: hidden;
+  box-shadow: 0 8px 32px rgba(44, 43, 40, 0.1);
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(44, 43, 40, 0.15);
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .service-image {
-  height: 400px;
+  height: 300px;
   overflow: hidden;
-  margin-bottom: var(--space-md);
+  margin: calc(var(--space-lg) * -1) calc(var(--space-lg) * -1) var(--space-md);
+  border-radius: 16px 16px 0 0;
 }
 
 .service-image img {
@@ -145,7 +187,7 @@
 }
 
 .service-content {
-  padding: var(--space-md) 0;
+  padding: 0;
 }
 
 .service-content h3 {
@@ -303,15 +345,20 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {
-    grid-template-columns: 1fr;
     min-height: auto;
-    gap: var(--space-md);
-    padding: var(--space-md);
+    padding: var(--space-lg) 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding: 0 var(--space-sm);
   }
 
   .hero-content {
     padding: var(--space-md) 0;
     text-align: center;
+    order: 2;
   }
 
   .hero-content h1 {
@@ -319,21 +366,29 @@
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .hero-cta {
     justify-content: center;
   }
 
-  .hero-image {
-    height: 50vh;
-    order: -1;
+  .hero-visual {
+    order: 1;
+  }
+
+  .hero-image-main {
+    height: 350px;
+    max-width: 100%;
   }
 
   .services-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-md);
+  }
+
+  .service-card {
+    margin: 0 var(--space-xs);
   }
 
   .why-choose .grid {
@@ -354,10 +409,20 @@
   .booking-actions {
     flex-direction: column;
     align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .btn-large {
+    width: 100%;
+    max-width: 280px;
   }
 
   .work-gallery {
     grid-template-columns: 1fr;
     gap: var(--space-sm);
+  }
+
+  .float-animation {
+    animation: none;
   }
 }
