@@ -1,0 +1,121 @@
+/* Gallery Page Styles */
+
+.gallery-page {
+  margin-top: 80px;
+}
+
+.gallery-hero {
+  padding: var(--space-xl) 0;
+  background: linear-gradient(135deg, var(--light-neutral) 0%, var(--mid-neutral) 100%);
+  text-align: center;
+}
+
+.gallery-hero h1 {
+  margin-bottom: var(--space-md);
+}
+
+.gallery-content {
+  padding: var(--space-xl) 0;
+}
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: var(--white);
+  border: 2px solid var(--mid-neutral);
+  color: var(--dark-neutral);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.filter-btn:hover {
+  animation: giggle 0.5s ease-in-out;
+  border-color: var(--primary-orange);
+  color: var(--primary-orange);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, var(--primary-orange), var(--accent-orange));
+  color: var(--white);
+  border-color: var(--primary-orange);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-lg);
+}
+
+.gallery-item {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 25px var(--shadow-light);
+  transition: var(--transition-smooth);
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px var(--shadow-medium);
+}
+
+.gallery-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: var(--white);
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+  transform: translateY(100%);
+  transition: var(--transition-smooth);
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.gallery-overlay h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+.gallery-overlay p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+  color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .gallery-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-btn {
+    width: 200px;
+  }
+}

@@ -1,0 +1,149 @@
+/* Booking Page Styles */
+
+.booking-page {
+  margin-top: 80px;
+}
+
+.booking-hero {
+  padding: var(--space-xl) 0;
+  background: linear-gradient(135deg, var(--light-neutral) 0%, var(--mid-neutral) 100%);
+  text-align: center;
+}
+
+.booking-hero h1 {
+  margin-bottom: var(--space-md);
+}
+
+.booking-content {
+  padding: var(--space-xl) 0;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-xxl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking-form-section h2 {
+  margin-bottom: var(--space-lg);
+  color: var(--dark-neutral);
+}
+
+.booking-form {
+  background: var(--white);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px var(--shadow-light);
+}
+
+.form-group {
+  margin-bottom: var(--space-lg);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--dark-neutral);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--mid-neutral);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  transition: var(--transition-fast);
+  font-family: var(--font-primary);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-orange);
+  box-shadow: 0 0 0 3px rgba(242, 124, 42, 0.1);
+}
+
+.form-input:hover {
+  border-color: var(--primary-orange);
+}
+
+select.form-input {
+  cursor: pointer;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: var(--space-md);
+}
+
+.contact-info-section {
+  background: var(--light-neutral);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  height: fit-content;
+}
+
+.contact-info-section h2 {
+  margin-bottom: var(--space-lg);
+  color: var(--dark-neutral);
+}
+
+.contact-methods {
+  margin-bottom: var(--space-xl);
+}
+
+.contact-method {
+  margin-bottom: var(--space-lg);
+}
+
+.contact-method h4 {
+  margin-bottom: 0.5rem;
+  color: var(--dark-neutral);
+}
+
+.contact-method a {
+  color: var(--primary-orange);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: var(--transition-fast);
+}
+
+.contact-method a:hover {
+  color: var(--dark-neutral);
+  text-decoration: underline;
+}
+
+.booking-benefits h3 {
+  margin-bottom: var(--space-md);
+  color: var(--dark-neutral);
+}
+
+.booking-benefits ul {
+  list-style: none;
+}
+
+.booking-benefits li {
+  margin-bottom: 0.75rem;
+  color: var(--dark-grey);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .booking-form,
+  .contact-info-section {
+    padding: var(--space-lg);
+  }
+}

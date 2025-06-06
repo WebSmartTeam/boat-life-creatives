@@ -26,10 +26,16 @@
 }
 
 .footer-logo-image {
-  height: 60px;
+  height: 100px;
   width: auto;
+  max-width: 250px;
   margin-bottom: var(--space-sm);
   filter: brightness(0) invert(1);
+  transition: var(--transition-smooth);
+}
+
+.footer-logo-image:hover {
+  transform: scale(1.05);
 }
 
 .footer-tagline {

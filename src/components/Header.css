@@ -26,13 +26,16 @@
 }
 
 .logo-image {
-  height: 50px;
+  height: 80px;
   width: auto;
+  max-width: 200px;
   transition: var(--transition-smooth);
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
 }
 
 .logo-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
 }
 
 /* Navigation */
