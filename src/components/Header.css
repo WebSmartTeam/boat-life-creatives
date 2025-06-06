@@ -301,6 +301,11 @@
     border: 1px solid rgba(0, 0, 0, 0.08);
   }
 
+  /* Hide About link on mobile */
+  .nav-link[href="/about"] {
+    display: none;
+  }
+
   .nav-dropdown {
     width: 100%;
   }
