@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 var(--space-6);
 }
@@ -209,7 +209,15 @@
   }
 
   .phone-cta {
-    display: none; /* Hide phone on mobile to save space */
+    display: flex; /* Keep phone visible on mobile */
+  }
+  
+  .phone-label {
+    display: none; /* Hide label to save space */
+  }
+  
+  .phone-number {
+    font-size: var(--text-base);
   }
 
   .nav {

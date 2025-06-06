@@ -218,13 +218,19 @@ a:hover {
 
 /* LAYOUT UTILITIES */
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 var(--space-6);
 }
 
 .container-wide {
-  max-width: 1400px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.container-full {
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 var(--space-6);
 }
@@ -252,7 +258,7 @@ a:hover {
 }
 
 .grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .grid-4 {
@@ -274,12 +280,12 @@ a:hover {
   left: -8px;
   right: -8px;
   bottom: -8px;
-  background: linear-gradient(45deg, var(--primary-orange), var(--primary-orange-light));
+  background: linear-gradient(45deg, var(--charcoal), var(--medium-grey), var(--charcoal));
   border-radius: 
     50% 30% 60% 40% / 
     40% 70% 30% 60%;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: all var(--transition-base);
   animation: paintedBorder 8s ease-in-out infinite;
 }
@@ -291,7 +297,7 @@ a:hover {
   left: -4px;
   right: -4px;
   bottom: -4px;
-  background: white;
+  background: var(--light-grey);
   border-radius: 
     40% 60% 50% 30% / 
     60% 30% 70% 40%;
@@ -357,9 +363,9 @@ a:hover {
   background: conic-gradient(
     from 45deg,
     var(--primary-orange) 0deg,
-    var(--primary-orange-light) 90deg,
-    var(--primary-orange) 180deg,
-    var(--primary-orange-dark) 270deg,
+    var(--charcoal) 90deg,
+    var(--sage-green) 180deg,
+    var(--medium-grey) 270deg,
     var(--primary-orange) 360deg
   );
   border-radius: 
@@ -378,14 +384,14 @@ a:hover {
 .image-frame.watercolor::before {
   background: radial-gradient(
     ellipse at 30% 70%, 
-    rgba(242, 124, 42, 0.8) 0%, 
-    rgba(245, 166, 35, 0.6) 40%, 
+    rgba(44, 43, 40, 0.8) 0%, 
+    rgba(139, 134, 128, 0.6) 40%, 
     transparent 70%
   ),
   radial-gradient(
     ellipse at 70% 30%, 
-    rgba(232, 90, 42, 0.7) 0%, 
-    rgba(242, 124, 42, 0.5) 50%, 
+    rgba(242, 124, 42, 0.6) 0%, 
+    rgba(122, 132, 113, 0.5) 50%, 
     transparent 80%
   );
   border-radius: 
@@ -404,7 +410,7 @@ a:hover {
 
 /* Paint Splatter Accents */
 .image-frame.splatter::before {
-  background: var(--primary-orange);
+  background: linear-gradient(135deg, var(--charcoal), var(--deep-charcoal));
   clip-path: polygon(
     30% 0%, 70% 0%, 100% 30%, 100% 70%, 
     70% 100%, 30% 100%, 0% 70%, 0% 30%
@@ -414,7 +420,7 @@ a:hover {
 }
 
 .image-frame.splatter::after {
-  background: white;
+  background: var(--warm-white);
   clip-path: polygon(
     25% 5%, 75% 5%, 95% 25%, 95% 75%, 
     75% 95%, 25% 95%, 5% 75%, 5% 25%
@@ -425,12 +431,12 @@ a:hover {
 
 /* Hand-drawn Border Effect */
 .image-frame.hand-drawn {
-  filter: drop-shadow(0 0 0 var(--primary-orange));
+  filter: drop-shadow(2px 2px 4px rgba(44, 43, 40, 0.3));
 }
 
 .image-frame.hand-drawn::before {
   background: none;
-  border: 4px solid var(--primary-orange);
+  border: 4px solid var(--charcoal);
   border-radius: 
     90% 10% 80% 20% / 
     20% 90% 10% 80%;
@@ -439,7 +445,7 @@ a:hover {
 
 .image-frame.hand-drawn::after {
   background: none;
-  border: 2px solid var(--primary-orange-light);
+  border: 2px solid var(--medium-grey);
   border-radius: 
     80% 20% 70% 30% / 
     30% 80% 20% 70%;

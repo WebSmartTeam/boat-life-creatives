@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="footer-section">
             <div className="footer-logo">
               <img 
-                src="/images/logo/20250606_1506_Boat Life Logo Design_simple_compose_01jx29f1a2efxttd8qd2s8kz0v.png" 
+                src="/images/logo/New LOGO.png" 
                 alt="Boat Life Creatives" 
                 className="footer-logo-image"
               />
@@ -40,18 +40,18 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact</h4>
             <div className="contact-info">
-              <p>
-                <strong>Phone:</strong><br />
+              <div className="contact-item">
+                <strong>Phone:</strong>
                 <a href="tel:07453817030">07453 817030</a>
-              </p>
-              <p>
-                <strong>Email:</strong><br />
+              </div>
+              <div className="contact-item">
+                <strong>Email:</strong>
                 <a href="mailto:info@boatlifecreatives.co.uk">info@boatlifecreatives.co.uk</a>
-              </p>
-              <p>
-                <strong>Website:</strong><br />
+              </div>
+              <div className="contact-item">
+                <strong>Website:</strong>
                 <a href="https://www.boatlifecreatives.co.uk">www.boatlifecreatives.co.uk</a>
-              </p>
+              </div>
             </div>
           </div>
         </div>

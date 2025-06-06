@@ -1,12 +1,12 @@
 /* HOME PAGE - PREMIUM PAINTING CONTRACTOR DESIGN */
 
 .home {
-  margin-top: 80px; /* Account for fixed header */
+  margin-top: 70px; /* Account for fixed header - reduced from 80px */
 }
 
 /* HERO SECTION */
 .hero {
-  padding: var(--space-32) 0 var(--space-20);
+  padding: var(--space-16) 0 var(--space-12);
   background: linear-gradient(135deg, var(--cream-white) 0%, var(--warm-white) 100%);
   position: relative;
   overflow: hidden;
