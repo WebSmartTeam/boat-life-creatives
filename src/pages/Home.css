@@ -88,9 +88,10 @@
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-16);
+  gap: var(--space-20);
   align-items: center;
   min-height: 80vh;
+  padding: 0 var(--space-8);
 }
 
 .hero-content {
@@ -272,7 +273,8 @@
 }
 
 .services-grid {
-  gap: var(--space-8);
+  gap: var(--space-12);
+  padding: 0 var(--space-8);
 }
 
 .service-card {
@@ -380,9 +382,10 @@
 
 .why-choose-grid {
   align-items: center;
-  gap: var(--space-16);
+  gap: var(--space-20);
   position: relative;
   z-index: 1;
+  padding: 0 var(--space-8);
 }
 
 .content-block {
@@ -441,6 +444,14 @@
 /* RECENT WORK SECTION */
 .work-gallery {
   margin-bottom: var(--space-12);
+  padding: 0 var(--space-8);
+}
+
+/* Wide screens - 4 columns */
+@media (min-width: 1400px) {
+  .work-gallery.grid-3 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .work-item {

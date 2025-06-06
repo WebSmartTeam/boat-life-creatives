@@ -228,6 +228,14 @@ const Home = () => {
                 />
               </div>
             </div>
+            <div className="work-item fade-in">
+              <div className="work-image">
+                <img 
+                  src="/images/before-after/20250606_1648_Retail Paint Transformation_simple_compose_01jx2fawyyfnjtm3h8fyxrs2qj.png" 
+                  alt="Retail transformation" 
+                />
+              </div>
+            </div>
           </div>
           
           <div className="work-cta text-center">
