@@ -6,6 +6,9 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
+        <div className="paint-splash-accent">
+          <img src="/client-images/paint splash.png" alt="" />
+        </div>
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
@@ -138,6 +141,9 @@ const Home = () => {
 
       {/* Why Choose Us Section */}
       <section className="why-choose section">
+        <div className="paint-splash-accent-2">
+          <img src="/client-images/paint splash.png" alt="" />
+        </div>
         <div className="container">
           <div className="why-choose-grid grid grid-2">
             <div className="content-block">

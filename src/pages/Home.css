@@ -12,6 +12,34 @@
   overflow: hidden;
 }
 
+/* Paint Splash Accent */
+.paint-splash-accent {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  opacity: 0.15;
+  z-index: 1;
+  animation: floatSplash 8s ease-in-out infinite;
+}
+
+.paint-splash-accent img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(-15deg);
+}
+
+@keyframes floatSplash {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% { 
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -252,9 +280,33 @@
 }
 
 /* WHY CHOOSE US SECTION */
+.why-choose {
+  position: relative;
+}
+
+.paint-splash-accent-2 {
+  position: absolute;
+  bottom: -10%;
+  left: -8%;
+  width: 350px;
+  height: 350px;
+  opacity: 0.1;
+  z-index: 0;
+  transform: rotate(45deg);
+}
+
+.paint-splash-accent-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: hue-rotate(20deg); /* Slightly different orange tone */
+}
+
 .why-choose-grid {
   align-items: center;
   gap: var(--space-16);
+  position: relative;
+  z-index: 1;
 }
 
 .content-block {
