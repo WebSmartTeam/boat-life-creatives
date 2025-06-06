@@ -45,12 +45,12 @@
 /* Paint Splash Accent */
 .paint-splash-accent {
   position: absolute;
-  top: 20%;
-  left: -10%;
-  width: 400px;
-  height: 400px;
-  opacity: 0.5;
-  z-index: 0;
+  top: 0;
+  left: -50px;
+  width: 350px;
+  height: 350px;
+  opacity: 0.3;
+  z-index: -1;
   animation: floatSplash 15s ease-in-out infinite;
 }
 
