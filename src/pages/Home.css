@@ -1,17 +1,18 @@
 /* Home Page - Skinn.be inspired aesthetic */
 
 .home {
-  margin-top: 80px; /* Account for fixed header */
+  margin-top: 120px; /* Account for larger fixed header */
 }
 
 /* Modern Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, var(--light-neutral) 0%, var(--mid-neutral) 100%);
   position: relative;
   overflow: hidden;
+  padding: var(--space-xl) 0;
 }
 
 .hero::before {

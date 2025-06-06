@@ -16,7 +16,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-sm) 0;
+  padding: var(--space-md) 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
 }
 
 .logo {
@@ -26,9 +30,9 @@
 }
 
 .logo-image {
-  height: 80px;
+  height: 140px;
   width: auto;
-  max-width: 200px;
+  max-width: 350px;
   transition: var(--transition-smooth);
   filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
 }
