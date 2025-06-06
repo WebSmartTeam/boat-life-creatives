@@ -17,21 +17,28 @@ const Header = () => {
             />
           </Link>
           
-          <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-            <Link to="/about" className="nav-link">About</Link>
-            <div className="nav-dropdown">
-              <span className="nav-link">Services</span>
-              <div className="dropdown-content">
-                <Link to="/services/marine">Marine</Link>
-                <Link to="/services/residential">Residential</Link>
-                <Link to="/services/commercial">Commercial</Link>
-              </div>
+          <div className="header-right">
+            <div className="phone-cta">
+              <span className="phone-label">Call for Quote:</span>
+              <a href="tel:07453817030" className="phone-number">07453 817030</a>
             </div>
-            <Link to="/gallery" className="nav-link">Gallery</Link>
-            <Link to="/testimonials" className="nav-link">Testimonials</Link>
-            <Link to="/faq" className="nav-link">FAQ</Link>
-            <Link to="/booking" className="nav-link booking-btn">Book Now</Link>
-          </nav>
+            
+            <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
+              <Link to="/about" className="nav-link">About</Link>
+              <div className="nav-dropdown">
+                <span className="nav-link">Services</span>
+                <div className="dropdown-content">
+                  <Link to="/services/marine">Marine</Link>
+                  <Link to="/services/residential">Residential</Link>
+                  <Link to="/services/commercial">Commercial</Link>
+                </div>
+              </div>
+              <Link to="/gallery" className="nav-link">Gallery</Link>
+              <Link to="/testimonials" className="nav-link">Testimonials</Link>
+              <Link to="/faq" className="nav-link">FAQ</Link>
+              <Link to="/booking" className="nav-link booking-btn">Book Now</Link>
+            </nav>
+          </div>
 
           <button 
             className="menu-toggle"

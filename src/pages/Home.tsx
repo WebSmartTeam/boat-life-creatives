@@ -15,21 +15,21 @@ const Home = () => {
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
-              <div className="hero-badge">🚤 Marine Paint Specialists</div>
-              <h1 className="fade-in">Professional Boat Painting</h1>
-              <p className="hero-subtitle fade-in">15 years turning weathered hulls into showroom condition. Expert marine coatings, anti-fouling, and complete yacht transformations. Your boat deserves the best.</p>
+              <div className="hero-badge">🚤 #1 Marine Paint Specialists</div>
+              <h1 className="fade-in">We Make Boats Look BETTER Than New</h1>
+              <p className="hero-subtitle fade-in">15 years, 500+ boats transformed. When others say "impossible," we say "Tuesday." Your rusty hull becomes a showroom masterpiece - GUARANTEED. Most jobs done in 48 hours.</p>
               <div className="hero-features">
-                <div className="feature-item">🎨 Hull Restoration</div>
-                <div className="feature-item">⚓ Anti-Fouling</div>
-                <div className="feature-item">🏠 Houses & Offices Too</div>
+                <div className="feature-item">⚡ 48-Hour Turnaround</div>
+                <div className="feature-item">💎 Showroom Quality</div>
+                <div className="feature-item">🛡️ 3-Year Guarantee</div>
               </div>
               <div className="hero-cta fade-in">
-                <Link to="/booking" className="btn btn-primary btn-large">Get Free Quote</Link>
-                <Link to="/gallery" className="btn btn-secondary">View Portfolio</Link>
+                <Link to="/booking" className="btn btn-primary btn-large">Get FREE $500 Quote</Link>
+                <Link to="/gallery" className="btn btn-secondary">See Transformations</Link>
               </div>
             </div>
             <div className="hero-visual">
-              <div className="hero-image-main">
+              <div className="hero-image-main paint-border paint-drip-image">
                 <img 
                   src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5barefj8db6kg1mg1dqf.png"
                   alt="Boat hull painting work in progress"
@@ -56,7 +56,7 @@ const Home = () => {
           <div className="services-grid grid grid-3">
             
             <div className="service-card fade-in">
-              <div className="service-image">
+              <div className="service-image brush-border">
                 <img 
                   src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5bate4db61w6mqvjymv9.png"
                   alt="Marine painting services"
@@ -75,8 +75,8 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="service-card fade-in">
-              <div className="service-image">
+            <div className="service-card fade-in splash-border">
+              <div className="service-image paint-drip-image">
                 <img 
                   src="/images/residential/20250605_2203_Freshly Painted Spaces_simple_compose_01jx0eybf2e56ahkyqhj27f4ae.png"
                   alt="Residential painting services"
@@ -96,7 +96,7 @@ const Home = () => {
             </div>
 
             <div className="service-card fade-in">
-              <div className="service-image">
+              <div className="service-image paint-border">
                 <img 
                   src="/images/commercial/20250606_1639_Sleek Modern Office_simple_compose_01jx2ew9v0e9f8bk7cbqfbmz8q.png"
                   alt="Commercial painting services"

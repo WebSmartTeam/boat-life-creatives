@@ -40,6 +40,40 @@
   opacity: 0.8;
 }
 
+/* Header Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.phone-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.phone-label {
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.phone-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--electric-orange);
+  text-decoration: none;
+  transition: var(--transition-quick);
+}
+
+.phone-number:hover {
+  color: #E55A2B;
+  transform: scale(1.05);
+}
+
 /* Minimal Clean Navigation */
 .nav {
   display: flex;
