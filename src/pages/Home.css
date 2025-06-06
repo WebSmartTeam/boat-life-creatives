@@ -44,17 +44,28 @@
   }
 }
 
-/* Paint Splash Accent */
+/* Paint Splash Accent - Behind CTA button */
 .paint-splash-accent {
   position: absolute;
-  top: 0;
-  left: -50px;
-  width: 350px;
-  height: 350px;
-  opacity: 0.5;
+  bottom: 15%;
+  left: -100px;
+  width: 450px;
+  height: 450px;
+  opacity: 0.6;
   z-index: 2;
-  animation: floatSplash 15s ease-in-out infinite;
+  animation: splashSlideIn 2s ease-out 1.5s both;
   filter: brightness(0) invert(1);
+}
+
+@keyframes splashSlideIn {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.6;
+  }
 }
 
 .paint-splash-accent img {
@@ -205,6 +216,8 @@
   gap: var(--space-4);
   flex-wrap: wrap;
   animation: heroSlideIn 0.8s ease-out 0.7s both;
+  position: relative;
+  z-index: 4;
 }
 
 .hero-visual {
