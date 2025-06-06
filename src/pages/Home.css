@@ -237,34 +237,10 @@
 /* SERVICES SECTION */
 .services {
   position: relative;
-  background: linear-gradient(135deg, #F5F5F5 0%, #EEEEEE 100%);
+  background: #F8F8F8;
   overflow: hidden;
 }
 
-/* Service Section Background Shapes */
-.services::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 40%;
-  height: 120%;
-  background: radial-gradient(circle, rgba(242, 124, 42, 0.05) 0%, transparent 50%);
-  border-radius: 50%;
-  z-index: 0;
-}
-
-.services::after {
-  content: '';
-  position: absolute;
-  bottom: -30%;
-  left: -20%;
-  width: 35%;
-  height: 80%;
-  background: radial-gradient(ellipse, rgba(44, 43, 40, 0.03) 0%, transparent 50%);
-  transform: rotate(-15deg);
-  z-index: 0;
-}
 
 .services .container {
   position: relative;
@@ -297,17 +273,20 @@
   box-shadow: var(--shadow-lg);
 }
 
-/* Strong, visible column backgrounds */
+/* Soft, distinctive column backgrounds */
 .services-grid > div:nth-child(1) .service-card {
-  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%); /* Strong Blue for Marine */
+  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); /* Soft Blue for Marine */
+  border: 1px solid #90CAF9;
 }
 
 .services-grid > div:nth-child(2) .service-card {
-  background: linear-gradient(135deg, #388E3C 0%, #2E7D32 100%); /* Strong Green for Residential */
+  background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); /* Soft Green for Residential */
+  border: 1px solid #A5D6A7;
 }
 
 .services-grid > div:nth-child(3) .service-card {
-  background: linear-gradient(135deg, #455A64 0%, #37474F 100%); /* Strong Grey for Commercial */
+  background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); /* Soft Orange for Commercial */
+  border: 1px solid #FFCC80;
 }
 
 .service-image {
@@ -319,12 +298,12 @@
 
 .service-content h3 {
   margin-bottom: var(--space-3);
-  color: white;
+  color: var(--charcoal);
 }
 
 .service-content p {
   margin-bottom: var(--space-4);
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--medium-grey);
   line-height: 1.6;
 }
 
@@ -335,7 +314,7 @@
 
 .service-features li {
   padding: var(--space-1) 0;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--charcoal);
   position: relative;
   padding-left: var(--space-4);
   font-size: var(--text-sm);
@@ -343,14 +322,14 @@
 
 .service-features li::before {
   content: '✓';
-  color: white;
+  color: var(--primary-orange);
   position: absolute;
   left: 0;
   font-weight: 600;
 }
 
 .service-link {
-  color: white;
+  color: var(--primary-orange);
   text-decoration: none;
   font-weight: 700;
   font-size: var(--text-sm);
@@ -359,14 +338,16 @@
   align-items: center;
   gap: var(--space-1);
   padding: var(--space-2) var(--space-3);
-  background: rgba(255, 255, 255, 0.2);
+  background: white;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--primary-orange);
 }
 
 .service-link:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--primary-orange);
+  color: white;
   transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
 }
 
 /* WHY CHOOSE US SECTION */
