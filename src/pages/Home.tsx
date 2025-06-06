@@ -195,7 +195,7 @@ const Home = () => {
           
           <div className="work-gallery grid grid-3">
             <div className="work-item fade-in">
-              <div className="work-image image-frame brush-style">
+              <div className="work-image image-frame subtle-border">
                 <img 
                   src="/images/before-after/20250605_2208_Restoration Transformation Showcase_simple_compose_01jx0f80qxfmy8m1h7w7kk521p.png" 
                   alt="Before transformation" 
@@ -203,7 +203,7 @@ const Home = () => {
               </div>
             </div>
             <div className="work-item fade-in">
-              <div className="work-image image-frame hand-drawn">
+              <div className="work-image image-frame subtle-border">
                 <img 
                   src="/images/before-after/20250606_1648_Boat Hull Transformation_simple_compose_01jx2fak7pe1aamq22f82hph8b.png" 
                   alt="Boat hull transformation" 
@@ -211,7 +211,7 @@ const Home = () => {
               </div>
             </div>
             <div className="work-item fade-in">
-              <div className="work-image image-frame splatter">
+              <div className="work-image image-frame subtle-border">
                 <img 
                   src="/images/before-after/20250606_1653_Stairwell Transformation_simple_compose_01jx2fjfp0e8fsmq1c9pr9vt4w.png" 
                   alt="Stairwell transformation" 
