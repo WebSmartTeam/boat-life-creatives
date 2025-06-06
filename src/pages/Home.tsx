@@ -36,7 +36,7 @@ const Home = () => {
               </div>
             </div>
             <div className="hero-visual fade-in">
-              <div className="hero-image-frame image-frame">
+              <div className="hero-image-frame image-frame watercolor">
                 <img 
                   src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5barefj8db6kg1mg1dqf.png"
                   alt="Professional boat hull painting work in progress"
@@ -60,7 +60,7 @@ const Home = () => {
           
           <div className="services-grid grid grid-3">
             <div className="service-card card fade-in">
-              <div className="service-image image-frame">
+              <div className="service-image image-frame brush-style">
                 <img 
                   src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5bate4db61w6mqvjymv9.png"
                   alt="Marine painting services"
@@ -85,7 +85,7 @@ const Home = () => {
             </div>
 
             <div className="service-card card fade-in">
-              <div className="service-image image-frame">
+              <div className="service-image image-frame hand-drawn">
                 <img 
                   src="/images/residential/20250605_2203_Freshly Painted Spaces_simple_compose_01jx0eybf2e56ahkyqhj27f4ae.png"
                   alt="Residential painting services"
@@ -110,7 +110,7 @@ const Home = () => {
             </div>
 
             <div className="service-card card fade-in">
-              <div className="service-image image-frame">
+              <div className="service-image image-frame splatter">
                 <img 
                   src="/images/commercial/20250606_1639_Sleek Modern Office_simple_compose_01jx2ew9v0e9f8bk7cbqfbmz8q.png"
                   alt="Commercial painting services"
@@ -174,7 +174,7 @@ const Home = () => {
             </div>
             
             <div className="image-block fade-in">
-              <div className="professional-image image-frame">
+              <div className="professional-image image-frame watercolor">
                 <img 
                   src="/images/team/20250605_2205_Professional Wall Painter_simple_compose_01jx0f33dbftp8ya4jpx85wrq8.png"
                   alt="Professional painter at work"
@@ -195,7 +195,7 @@ const Home = () => {
           
           <div className="work-gallery grid grid-3">
             <div className="work-item fade-in">
-              <div className="work-image image-frame">
+              <div className="work-image image-frame brush-style">
                 <img 
                   src="/images/before-after/20250605_2208_Restoration Transformation Showcase_simple_compose_01jx0f80qxfmy8m1h7w7kk521p.png" 
                   alt="Before transformation" 
@@ -203,7 +203,7 @@ const Home = () => {
               </div>
             </div>
             <div className="work-item fade-in">
-              <div className="work-image image-frame">
+              <div className="work-image image-frame hand-drawn">
                 <img 
                   src="/images/before-after/20250606_1648_Boat Hull Transformation_simple_compose_01jx2fak7pe1aamq22f82hph8b.png" 
                   alt="Boat hull transformation" 
@@ -211,7 +211,7 @@ const Home = () => {
               </div>
             </div>
             <div className="work-item fade-in">
-              <div className="work-image image-frame">
+              <div className="work-image image-frame splatter">
                 <img 
                   src="/images/before-after/20250606_1653_Stairwell Transformation_simple_compose_01jx2fjfp0e8fsmq1c9pr9vt4w.png" 
                   alt="Stairwell transformation" 

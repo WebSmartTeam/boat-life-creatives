@@ -259,18 +259,81 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-/* PREMIUM IMAGE TREATMENTS */
+/* ARTISTIC PAINTED IMAGE TREATMENTS */
 .image-frame {
   position: relative;
   overflow: hidden;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
   transition: all var(--transition-base);
 }
 
-.image-frame:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-xl);
+/* Organic Painted Border Effect */
+.image-frame::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background: linear-gradient(45deg, var(--primary-orange), var(--primary-orange-light));
+  border-radius: 
+    50% 30% 60% 40% / 
+    40% 70% 30% 60%;
+  z-index: -1;
+  opacity: 0.8;
+  transition: all var(--transition-base);
+  animation: paintedBorder 8s ease-in-out infinite;
+}
+
+.image-frame::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: white;
+  border-radius: 
+    40% 60% 50% 30% / 
+    60% 30% 70% 40%;
+  z-index: -1;
+  transition: all var(--transition-base);
+  animation: paintedBorder 8s ease-in-out infinite reverse;
+}
+
+@keyframes paintedBorder {
+  0%, 100% {
+    border-radius: 
+      50% 30% 60% 40% / 
+      40% 70% 30% 60%;
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    border-radius: 
+      30% 70% 40% 50% / 
+      60% 40% 50% 30%;
+    transform: rotate(1deg) scale(1.01);
+  }
+  50% {
+    border-radius: 
+      60% 40% 30% 70% / 
+      30% 60% 40% 50%;
+    transform: rotate(-0.5deg) scale(0.99);
+  }
+  75% {
+    border-radius: 
+      40% 50% 70% 30% / 
+      50% 30% 60% 40%;
+    transform: rotate(0.5deg) scale(1.01);
+  }
+}
+
+.image-frame:hover::before {
+  opacity: 1;
+  transform: rotate(2deg) scale(1.02);
+}
+
+.image-frame:hover::after {
+  transform: rotate(-1deg) scale(1.01);
 }
 
 .image-frame img {
@@ -278,19 +341,131 @@ a:hover {
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-slow);
+  border-radius: 
+    45% 35% 55% 35% / 
+    35% 65% 35% 55%;
+  position: relative;
+  z-index: 1;
 }
 
 .image-frame:hover img {
   transform: scale(1.02);
 }
 
-.image-rounded {
-  border-radius: var(--radius-xl);
+/* Alternative Brush Stroke Border */
+.image-frame.brush-style::before {
+  background: conic-gradient(
+    from 45deg,
+    var(--primary-orange) 0deg,
+    var(--primary-orange-light) 90deg,
+    var(--primary-orange) 180deg,
+    var(--primary-orange-dark) 270deg,
+    var(--primary-orange) 360deg
+  );
+  border-radius: 
+    60% 40% 80% 20% / 
+    30% 70% 50% 50%;
+  filter: blur(1px);
 }
 
-.image-circle {
-  border-radius: var(--radius-full);
-  aspect-ratio: 1;
+.image-frame.brush-style::after {
+  border-radius: 
+    70% 30% 60% 40% / 
+    40% 60% 30% 70%;
+}
+
+/* Watercolor Border Effect */
+.image-frame.watercolor::before {
+  background: radial-gradient(
+    ellipse at 30% 70%, 
+    rgba(242, 124, 42, 0.8) 0%, 
+    rgba(245, 166, 35, 0.6) 40%, 
+    transparent 70%
+  ),
+  radial-gradient(
+    ellipse at 70% 30%, 
+    rgba(232, 90, 42, 0.7) 0%, 
+    rgba(242, 124, 42, 0.5) 50%, 
+    transparent 80%
+  );
+  border-radius: 
+    80% 20% 60% 40% / 
+    40% 80% 20% 60%;
+  filter: blur(2px);
+}
+
+.image-frame.watercolor::after {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 
+    70% 30% 50% 50% / 
+    50% 70% 30% 50%;
+  filter: blur(0.5px);
+}
+
+/* Paint Splatter Accents */
+.image-frame.splatter::before {
+  background: var(--primary-orange);
+  clip-path: polygon(
+    30% 0%, 70% 0%, 100% 30%, 100% 70%, 
+    70% 100%, 30% 100%, 0% 70%, 0% 30%
+  );
+  border-radius: 0;
+  animation: none;
+}
+
+.image-frame.splatter::after {
+  background: white;
+  clip-path: polygon(
+    25% 5%, 75% 5%, 95% 25%, 95% 75%, 
+    75% 95%, 25% 95%, 5% 75%, 5% 25%
+  );
+  border-radius: 0;
+  animation: none;
+}
+
+/* Hand-drawn Border Effect */
+.image-frame.hand-drawn {
+  filter: drop-shadow(0 0 0 var(--primary-orange));
+}
+
+.image-frame.hand-drawn::before {
+  background: none;
+  border: 4px solid var(--primary-orange);
+  border-radius: 
+    90% 10% 80% 20% / 
+    20% 90% 10% 80%;
+  animation: handDrawn 6s ease-in-out infinite;
+}
+
+.image-frame.hand-drawn::after {
+  background: none;
+  border: 2px solid var(--primary-orange-light);
+  border-radius: 
+    80% 20% 70% 30% / 
+    30% 80% 20% 70%;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  animation: handDrawn 6s ease-in-out infinite reverse;
+}
+
+@keyframes handDrawn {
+  0%, 100% {
+    border-radius: 
+      90% 10% 80% 20% / 
+      20% 90% 10% 80%;
+  }
+  33% {
+    border-radius: 
+      10% 90% 20% 80% / 
+      80% 20% 90% 10%;
+  }
+  66% {
+    border-radius: 
+      80% 20% 90% 10% / 
+      10% 80% 20% 90%;
+  }
 }
 
 /* CARD COMPONENTS */
