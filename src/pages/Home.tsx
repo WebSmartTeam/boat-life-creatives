@@ -6,11 +6,11 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
-        <div className="paint-splash-accent">
-          <img src="/client-images/paint splash.png" alt="" />
-        </div>
         <div className="container">
           <div className="hero-grid">
+            <div className="paint-splash-accent">
+              <img src="/client-images/paint splash.png" alt="" />
+            </div>
             <div className="hero-content">
               <div className="hero-badge fade-in">🚤 Professional Boat Painting</div>
               <h1 className="fade-in">Turn Your Weathered Boat Into A Stunning Masterpiece</h1>
