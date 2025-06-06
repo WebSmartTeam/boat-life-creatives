@@ -6,11 +6,11 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #fff;
-  border-bottom: 2px solid #ddd;
-  transition: var(--transition-smooth);
-  padding: 0.8rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--dark-bg);
+  border-bottom: 4px solid var(--primary-orange);
+  transition: all 0.2s ease;
+  padding: 1rem 0;
+  box-shadow: 0 8px 0 var(--border-grey);
 }
 
 .header-content {
@@ -56,25 +56,27 @@
 
 .phone-label {
   font-size: 0.75rem;
-  color: #666;
-  font-weight: 500;
+  color: var(--text-grey);
+  font-weight: 600;
   margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--font-mono);
 }
 
 .phone-number {
   font-size: 1.2rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--power-blue), var(--electric-green));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-orange);
   text-decoration: none;
-  transition: var(--transition-quick);
+  transition: all 0.2s ease;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
 }
 
 .phone-number:hover {
-  transform: scale(1.1);
-  text-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+  color: var(--highlight-yellow);
+  text-shadow: 0 0 10px rgba(255, 229, 92, 0.5);
 }
 
 /* Minimal Clean Navigation */
@@ -85,18 +87,21 @@
 }
 
 .nav-link {
-  color: var(--warm-grey);
+  color: var(--text-grey);
   text-decoration: none;
-  font-weight: var(--weight-regular);
+  font-weight: 600;
   font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  transition: var(--transition-quick);
-  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
   font-family: var(--font-body);
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
 }
 
 .nav-link:hover {
-  color: var(--dark-neutral);
+  color: var(--primary-orange);
+  border-color: var(--primary-orange);
 }
 
 /* Clean Dropdown */
@@ -143,22 +148,26 @@
 
 /* Clean Booking Button */
 .booking-btn {
-  background-color: var(--dark-neutral);
-  color: var(--soft-white) !important;
-  padding: 0.6rem 1.4rem;
-  border: 1px solid var(--dark-neutral);
+  background-color: var(--primary-orange) !important;
+  color: var(--dark-bg) !important;
+  padding: 0.8rem 1.5rem;
+  border: 3px solid var(--primary-orange) !important;
   font-size: 0.85rem;
-  font-weight: var(--weight-medium);
-  text-transform: lowercase;
-  letter-spacing: 0.02em;
-  transition: var(--transition-smooth);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.2s ease;
   margin-left: var(--space-md);
+  box-shadow: 4px 4px 0 var(--accent-white);
+  transform: translate(0, 0);
 }
 
 .booking-btn:hover {
-  background-color: var(--primary-orange);
-  border-color: var(--primary-orange);
-  transform: translateY(-1px);
+  background-color: var(--accent-white) !important;
+  border-color: var(--accent-white) !important;
+  color: var(--dark-bg) !important;
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--accent-white);
 }
 
 /* Mobile Menu Toggle */
