@@ -62,16 +62,19 @@
 }
 
 .phone-number {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--electric-orange);
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--power-blue), var(--electric-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-decoration: none;
   transition: var(--transition-quick);
 }
 
 .phone-number:hover {
-  color: #E55A2B;
-  transform: scale(1.05);
+  transform: scale(1.1);
+  text-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
 }
 
 /* Minimal Clean Navigation */

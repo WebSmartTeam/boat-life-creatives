@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Bold Dramatic Paint Workshop Colors */
-  --electric-orange: #FF6B35;
-  --deep-black: #0D0D0D;
-  --paint-white: #FFFFFF;
-  --neon-blue: #00D4FF;
-  --vibrant-red: #FF2D55;
-  --electric-yellow: #FFD60A;
-  --industrial-grey: #3A3A3C;
-  --paint-silver: #E5E5E7;
+  /* POWER CONVERSION COLORS */
+  --power-blue: #0066FF;
+  --electric-green: #00FF88;
+  --warning-orange: #FF3D00;
+  --pure-white: #FFFFFF;
+  --deep-navy: #001122;
+  --success-green: #00C851;
+  --energy-yellow: #FFD700;
+  --premium-purple: #6A4C93;
   
-  /* STRONG Impact Typography */
-  --font-display: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* POWER TYPOGRAPHY */
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
   
   /* Weights for Editorial Feel */
   --weight-light: 200;
@@ -49,10 +49,10 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-weight: var(--weight-regular);
+  font-weight: 400;
   line-height: 1.6;
-  color: #2C2B28;
-  background-color: #FFFFFF;
+  color: var(--deep-navy);
+  background: linear-gradient(135deg, var(--pure-white) 0%, #F8FAFE 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.01em;
@@ -62,42 +62,45 @@ body {
   min-height: 100vh;
 }
 
-/* Modern Bold Typography */
+/* POWER CONVERSION TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: var(--weight-bold);
+  font-weight: 700;
   line-height: 1.1;
-  color: #2C2B28;
+  color: var(--deep-navy);
   letter-spacing: -0.02em;
   text-transform: none;
 }
 
 h1 {
-  font-size: clamp(3.5rem, 8vw, 6rem);
-  font-weight: 900;
-  margin-bottom: var(--space-md);
-  color: #1A1A1A;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 800;
+  margin-bottom: var(--space-lg);
+  background: linear-gradient(135deg, var(--power-blue), var(--electric-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 40px rgba(0, 102, 255, 0.3);
 }
 
 h2 {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
   margin-bottom: var(--space-md);
-  color: #2C2B28;
+  color: var(--deep-navy);
 }
 
 h3 {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 600;
   margin-bottom: var(--space-sm);
-  color: #2C2B28;
+  color: var(--power-blue);
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   line-height: 1.7;
-  color: #5A5A5C;
+  color: #4A5568;
   margin-bottom: var(--space-md);
   font-weight: 400;
 }
@@ -119,62 +122,72 @@ a:hover {
   color: var(--primary-orange);
 }
 
-/* Modern Engaging Buttons */
+/* POWER CONVERSION BUTTONS */
 button, .btn {
   font-family: var(--font-body);
-  font-weight: 600;
-  padding: 1rem 2.5rem;
-  border: 2px solid var(--electric-orange);
-  background: white;
-  color: var(--electric-orange);
+  font-weight: 700;
+  padding: 1.2rem 3rem;
+  border: none;
+  background: linear-gradient(135deg, var(--power-blue), var(--electric-green));
+  color: var(--pure-white);
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.1rem;
   letter-spacing: 0.02em;
-  border-radius: 8px;
-  text-transform: none;
+  border-radius: 50px;
+  text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 102, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+button::before, .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+button:hover::before, .btn:hover::before {
+  left: 100%;
 }
 
 button:hover, .btn:hover {
-  background: var(--electric-orange);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 45px rgba(0, 102, 255, 0.5);
 }
 
 .btn-primary {
-  background: var(--electric-orange);
-  border-color: var(--electric-orange);
-  color: white;
-  font-weight: 700;
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.3);
+  background: linear-gradient(135deg, var(--warning-orange), var(--energy-yellow));
+  color: var(--deep-navy);
+  font-weight: 800;
+  box-shadow: 0 8px 32px rgba(255, 61, 0, 0.4);
 }
 
 .btn-primary:hover {
-  background: #E55A2B;
-  border-color: #E55A2B;
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.5);
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 20px 50px rgba(255, 61, 0, 0.6);
 }
 
 .btn-secondary {
-  background: white;
-  border-color: #2C2B28;
-  color: #2C2B28;
+  background: linear-gradient(135deg, var(--pure-white), #F0F4F8);
+  border: 2px solid var(--power-blue);
+  color: var(--power-blue);
   font-weight: 600;
-  box-shadow: 0 4px 15px rgba(44, 43, 40, 0.2);
+  box-shadow: 0 6px 24px rgba(0, 102, 255, 0.2);
 }
 
 .btn-secondary:hover {
-  background: #2C2B28;
-  border-color: #2C2B28;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(44, 43, 40, 0.4);
+  background: var(--power-blue);
+  color: var(--pure-white);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 102, 255, 0.4);
 }
 
 /* Layout Utilities */

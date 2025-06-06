@@ -15,17 +15,17 @@ const Home = () => {
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
-              <div className="hero-badge">🚤 #1 Marine Paint Specialists</div>
-              <h1 className="fade-in">We Make Boats Look BETTER Than New</h1>
-              <p className="hero-subtitle fade-in">15 years, 500+ boats transformed. When others say "impossible," we say "Tuesday." Your rusty hull becomes a showroom masterpiece - GUARANTEED. Most jobs done in 48 hours.</p>
+              <div className="hero-badge">🚤 Boat Transformation Experts</div>
+              <h1 className="fade-in">Turn Your Weathered Boat Into A Stunning Masterpiece</h1>
+              <p className="hero-subtitle fade-in">500+ successful transformations. Professional marine painting that makes old boats look brand new. Get your FREE quote in 60 seconds - most jobs completed within 48 hours with our 3-year guarantee.</p>
               <div className="hero-features">
                 <div className="feature-item">⚡ 48-Hour Turnaround</div>
                 <div className="feature-item">💎 Showroom Quality</div>
                 <div className="feature-item">🛡️ 3-Year Guarantee</div>
               </div>
               <div className="hero-cta fade-in">
-                <Link to="/booking" className="btn btn-primary btn-large">Get FREE $500 Quote</Link>
-                <Link to="/gallery" className="btn btn-secondary">See Transformations</Link>
+                <Link to="/booking" className="btn btn-primary btn-large">Get FREE Quote Now</Link>
+                <Link to="/gallery" className="btn btn-secondary">View Gallery</Link>
               </div>
             </div>
             <div className="hero-visual">
