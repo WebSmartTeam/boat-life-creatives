@@ -120,7 +120,7 @@
 /* SERVICES SECTION */
 .services {
   position: relative;
-  background: linear-gradient(135deg, var(--warm-white) 0%, #FFF5E6 50%, var(--light-grey) 100%);
+  background: linear-gradient(135deg, #F5F5F5 0%, #EEEEEE 100%);
   overflow: hidden;
 }
 
@@ -132,7 +132,7 @@
   right: -10%;
   width: 60%;
   height: 150%;
-  background: radial-gradient(circle, rgba(242, 124, 42, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(242, 124, 42, 0.3) 0%, transparent 70%);
   border-radius: 50%;
   z-index: 0;
 }
@@ -144,7 +144,7 @@
   left: -15%;
   width: 50%;
   height: 100%;
-  background: radial-gradient(ellipse, rgba(122, 132, 113, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse, rgba(44, 43, 40, 0.2) 0%, transparent 60%);
   transform: rotate(-15deg);
   z-index: 0;
 }
@@ -173,10 +173,23 @@
 
 .service-card {
   height: 100%;
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: none;
   position: relative;
   overflow: visible;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Strong, visible column backgrounds */
+.services-grid > div:nth-child(1) .service-card {
+  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%); /* Strong Blue for Marine */
+}
+
+.services-grid > div:nth-child(2) .service-card {
+  background: linear-gradient(135deg, #388E3C 0%, #2E7D32 100%); /* Strong Green for Residential */
+}
+
+.services-grid > div:nth-child(3) .service-card {
+  background: linear-gradient(135deg, #455A64 0%, #37474F 100%); /* Strong Grey for Commercial */
 }
 
 .service-image {
@@ -188,12 +201,12 @@
 
 .service-content h3 {
   margin-bottom: var(--space-3);
-  color: var(--deep-charcoal);
+  color: white;
 }
 
 .service-content p {
   margin-bottom: var(--space-4);
-  color: var(--medium-grey);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
 }
 
@@ -204,7 +217,7 @@
 
 .service-features li {
   padding: var(--space-1) 0;
-  color: var(--medium-grey);
+  color: rgba(255, 255, 255, 0.85);
   position: relative;
   padding-left: var(--space-4);
   font-size: var(--text-sm);
@@ -212,25 +225,30 @@
 
 .service-features li::before {
   content: '✓';
-  color: var(--primary-orange);
+  color: white;
   position: absolute;
   left: 0;
   font-weight: 600;
 }
 
 .service-link {
-  color: var(--primary-orange);
+  color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: var(--text-sm);
-  transition: color var(--transition-fast);
+  transition: all var(--transition-fast);
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .service-link:hover {
-  color: var(--primary-orange-dark);
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
 }
 
 /* WHY CHOOSE US SECTION */
