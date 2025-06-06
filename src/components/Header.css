@@ -1,4 +1,4 @@
-/* Header - Skinn.be inspired minimal floating navigation */
+/* HEADER - PREMIUM PAINTING CONTRACTOR DESIGN */
 
 .header {
   position: fixed;
@@ -6,45 +6,48 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: var(--dark-bg);
-  border-bottom: 4px solid var(--primary-orange);
-  transition: all 0.2s ease;
-  padding: 1rem 0;
-  box-shadow: 0 8px 0 var(--border-grey);
+  background: rgba(254, 254, 254, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-base);
+  padding: var(--space-4) 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: 0 var(--space-6);
 }
 
+/* LOGO */
 .logo {
   display: flex;
   align-items: center;
   text-decoration: none;
+  transition: opacity var(--transition-fast);
 }
 
-.logo-image {
-  height: 50px;
-  width: auto;
-  max-width: 180px;
-  transition: var(--transition-smooth);
-  filter: brightness(1.1);
-}
-
-.logo-image:hover {
+.logo:hover {
   opacity: 0.8;
 }
 
-/* Header Right Section */
+.logo-image {
+  height: 45px;
+  width: auto;
+  max-width: 200px;
+  transition: all var(--transition-base);
+}
+
+/* HEADER RIGHT SECTION */
 .header-right {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-8);
 }
 
 .phone-cta {
@@ -55,56 +58,50 @@
 }
 
 .phone-label {
-  font-size: 0.75rem;
-  color: var(--text-grey);
-  font-weight: 600;
-  margin-bottom: 2px;
+  font-size: var(--text-xs);
+  color: var(--medium-grey);
+  font-weight: 500;
+  margin-bottom: var(--space-1);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
 }
 
 .phone-number {
-  font-size: 1.2rem;
-  font-weight: 800;
+  font-size: var(--text-lg);
+  font-weight: 700;
   color: var(--primary-orange);
   text-decoration: none;
-  transition: all 0.2s ease;
-  font-family: var(--font-mono);
-  letter-spacing: 0.05em;
+  transition: color var(--transition-fast);
+  font-family: var(--font-body);
 }
 
 .phone-number:hover {
-  color: var(--highlight-yellow);
-  text-shadow: 0 0 10px rgba(255, 229, 92, 0.5);
+  color: var(--primary-orange-dark);
 }
 
-/* Minimal Clean Navigation */
+/* NAVIGATION */
 .nav {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-6);
 }
 
 .nav-link {
-  color: var(--text-grey);
+  color: var(--charcoal);
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  transition: all 0.2s ease;
-  text-transform: uppercase;
-  font-family: var(--font-body);
-  padding: 0.5rem 1rem;
-  border: 2px solid transparent;
+  font-weight: 500;
+  font-size: var(--text-sm);
+  transition: color var(--transition-fast);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  position: relative;
 }
 
 .nav-link:hover {
   color: var(--primary-orange);
-  border-color: var(--primary-orange);
 }
 
-/* Clean Dropdown */
+/* DROPDOWN */
 .nav-dropdown {
   position: relative;
 }
@@ -119,79 +116,100 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: var(--soft-white);
-  box-shadow: 0 8px 32px rgba(44, 43, 40, 0.1);
-  padding: var(--space-sm);
-  min-width: 180px;
+  background: white;
+  box-shadow: var(--shadow-xl);
+  padding: var(--space-4);
+  min-width: 200px;
   opacity: 0;
   transform: translateY(-10px);
   visibility: hidden;
-  transition: var(--transition-smooth);
-  margin-top: 0.5rem;
-  border: 1px solid rgba(44, 43, 40, 0.05);
+  transition: all var(--transition-base);
+  margin-top: var(--space-2);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius-lg);
 }
 
 .dropdown-content a {
   display: block;
-  color: var(--warm-grey);
+  color: var(--charcoal);
   text-decoration: none;
-  padding: 0.5rem 0.8rem;
-  transition: var(--transition-quick);
-  font-size: 0.85rem;
-  text-transform: lowercase;
+  padding: var(--space-2) var(--space-3);
+  transition: all var(--transition-fast);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-1);
 }
 
 .dropdown-content a:hover {
-  color: var(--dark-neutral);
-  background-color: rgba(239, 232, 222, 0.3);
+  color: var(--primary-orange);
+  background: var(--warm-white);
 }
 
-/* Clean Booking Button */
+.dropdown-content a:last-child {
+  margin-bottom: 0;
+}
+
+/* BOOKING BUTTON */
 .booking-btn {
-  background-color: var(--primary-orange) !important;
-  color: var(--dark-bg) !important;
-  padding: 0.8rem 1.5rem;
-  border: 3px solid var(--primary-orange) !important;
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  transition: all 0.2s ease;
-  margin-left: var(--space-md);
-  box-shadow: 4px 4px 0 var(--accent-white);
-  transform: translate(0, 0);
+  background: var(--primary-orange) !important;
+  color: white !important;
+  padding: var(--space-3) var(--space-5);
+  border: 2px solid var(--primary-orange) !important;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  transition: all var(--transition-base);
+  margin-left: var(--space-4);
+  border-radius: var(--radius-md);
+  text-transform: none;
 }
 
 .booking-btn:hover {
-  background-color: var(--accent-white) !important;
-  border-color: var(--accent-white) !important;
-  color: var(--dark-bg) !important;
-  transform: translate(4px, 4px);
-  box-shadow: 0 0 0 var(--accent-white);
+  background: var(--primary-orange-dark) !important;
+  border-color: var(--primary-orange-dark) !important;
+  color: white !important;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
-/* Mobile Menu Toggle */
+/* MOBILE MENU TOGGLE */
 .menu-toggle {
   display: none;
   flex-direction: column;
   background: none;
   border: none;
   cursor: pointer;
-  padding: var(--space-xs);
+  padding: var(--space-2);
+  gap: var(--space-1);
 }
 
 .menu-toggle span {
-  width: 25px;
+  width: 24px;
   height: 2px;
-  background-color: var(--dark-neutral);
-  margin: 3px 0;
-  transition: var(--transition-smooth);
+  background-color: var(--charcoal);
+  transition: all var(--transition-base);
+  border-radius: 1px;
 }
 
-/* Mobile Styles */
+.menu-toggle:hover span {
+  background-color: var(--primary-orange);
+}
+
+/* MOBILE STYLES */
 @media (max-width: 768px) {
+  .header-content {
+    padding: 0 var(--space-4);
+  }
+  
   .menu-toggle {
     display: flex;
+  }
+
+  .header-right {
+    gap: var(--space-4);
+  }
+
+  .phone-cta {
+    display: none; /* Hide phone on mobile to save space */
   }
 
   .nav {
@@ -199,17 +217,16 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(254, 254, 254, 0.95);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    background: white;
     flex-direction: column;
-    padding: var(--space-md);
+    padding: var(--space-6);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: var(--transition-smooth);
-    box-shadow: 0 10px 40px rgba(44, 43, 40, 0.15);
-    border-top: 1px solid rgba(44, 43, 40, 0.06);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-xl);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    gap: var(--space-4);
   }
 
   .nav-open {
@@ -219,10 +236,11 @@
   }
 
   .nav-link {
-    padding: var(--space-sm) 0;
-    border-bottom: 1px solid var(--light-neutral);
-    width: 100%;
+    padding: var(--space-3) var(--space-4);
     text-align: center;
+    width: 100%;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(0, 0, 0, 0.08);
   }
 
   .nav-dropdown {
@@ -235,12 +253,29 @@
     transform: none;
     visibility: visible;
     box-shadow: none;
-    background-color: var(--light-neutral);
-    margin-top: var(--space-xs);
+    background: var(--warm-white);
+    margin-top: var(--space-2);
+    border: none;
   }
 
   .booking-btn {
     margin-left: 0;
-    margin-top: var(--space-sm);
+    margin-top: var(--space-4);
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    padding: 0 var(--space-3);
+  }
+  
+  .logo-image {
+    height: 40px;
+  }
+  
+  .nav {
+    padding: var(--space-4);
   }
 }
