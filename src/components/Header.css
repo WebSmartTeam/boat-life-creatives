@@ -320,16 +320,21 @@
     margin-top: var(--space-2);
     border: none;
     width: 100%;
-    padding: var(--space-4);
+    padding: var(--space-3);
   }
   
   .mega-menu-content {
     grid-template-columns: 1fr;
-    gap: var(--space-4);
+    gap: var(--space-2);
   }
   
   .mega-menu-image {
     height: 80px;
+  }
+
+  /* Hide service descriptions on mobile to save space */
+  .mega-menu-text p {
+    display: none;
   }
 
   .booking-btn {
