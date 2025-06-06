@@ -6,6 +6,14 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
+        {/* Paint Background Elements */}
+        <div className="paint-splatter paint-splatter-1"></div>
+        <div className="paint-splatter paint-splatter-2"></div>
+        <div className="brush-stroke brush-stroke-1"></div>
+        <div className="paint-drip paint-drip-1"></div>
+        <div className="color-swatch swatch-orange"></div>
+        <div className="color-swatch swatch-blue"></div>
+        
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
@@ -13,9 +21,9 @@ const Home = () => {
               <h1 className="fade-in">I Paint Boats. Properly.</h1>
               <p className="hero-subtitle fade-in">Hull work, anti-fouling, varnishing, full boat resprays. Plus houses and commercial jobs when I'm not on the water. Call Pete on 07453 817030.</p>
               <div className="hero-features">
-                <div className="feature-item">✓ Hull Restoration</div>
-                <div className="feature-item">✓ Anti-Fouling</div>
-                <div className="feature-item">✓ Houses & Offices Too</div>
+                <div className="feature-item">🎨 Hull Restoration</div>
+                <div className="feature-item">⚓ Anti-Fouling</div>
+                <div className="feature-item">🏠 Houses & Offices Too</div>
               </div>
               <div className="hero-cta fade-in">
                 <Link to="/booking" className="btn btn-primary btn-large">Get Free Quote</Link>
@@ -37,6 +45,13 @@ const Home = () => {
 
       {/* Services Section */}
       <section className="services section-large">
+        {/* More Paint Elements */}
+        <div className="paint-splatter paint-splatter-3"></div>
+        <div className="brush-stroke brush-stroke-2"></div>
+        <div className="paint-drip paint-drip-2"></div>
+        <div className="color-swatch swatch-green"></div>
+        <div className="color-swatch swatch-red"></div>
+        
         <div className="container">
           <h2 className="section-title">What I Do</h2>
           <p className="section-subtitle">Mainly boats, but I'll paint your house too if you need it doing properly</p>
@@ -114,15 +129,15 @@ const Home = () => {
               <p>15 years painting boats and houses around the area. I show up when I say I will, do the job properly, and clean up after myself.</p>
               <div className="features-list">
                 <div className="feature">
-                  <h4>✓ Turn Up On Time</h4>
+                  <h4>⏰ Turn Up On Time</h4>
                   <p>I say Tuesday, I'm there Tuesday. Simple as that.</p>
                 </div>
                 <div className="feature">
-                  <h4>✓ Know My Materials</h4>
+                  <h4>🪣 Know My Materials</h4>
                   <p>15 years experience with marine paints and what works.</p>
                 </div>
                 <div className="feature">
-                  <h4>✓ Leave It Tidy</h4>
+                  <h4>🧽 Leave It Tidy</h4>
                   <p>Dust sheets down, clean up after. Leave your place better than I found it.</p>
                 </div>
               </div>

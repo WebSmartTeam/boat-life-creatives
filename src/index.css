@@ -210,6 +210,127 @@ img {
   animation: float 6s ease-in-out infinite;
 }
 
+/* Paint-Themed Background Elements */
+.paint-splatter {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.paint-splatter-1 {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-orange);
+  top: 10%;
+  right: 5%;
+  transform: rotate(15deg);
+}
+
+.paint-splatter-2 {
+  width: 40px;
+  height: 40px;
+  background: #2C2B28;
+  top: 60%;
+  left: 3%;
+  opacity: 0.4;
+}
+
+.paint-splatter-3 {
+  width: 80px;
+  height: 35px;
+  background: var(--primary-orange);
+  bottom: 20%;
+  right: 8%;
+  border-radius: 50% 30% 70% 40%;
+  opacity: 0.3;
+}
+
+/* Brush Stroke Effects */
+.brush-stroke {
+  position: absolute;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--primary-orange), transparent);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.brush-stroke-1 {
+  width: 200px;
+  top: 30%;
+  left: 10%;
+  transform: rotate(-15deg);
+}
+
+.brush-stroke-2 {
+  width: 150px;
+  top: 70%;
+  right: 15%;
+  transform: rotate(25deg);
+  background: linear-gradient(90deg, transparent, #2C2B28, transparent);
+}
+
+/* Paint Drip Effect */
+.paint-drip {
+  position: absolute;
+  width: 3px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--primary-orange), transparent);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.paint-drip-1 {
+  top: 15%;
+  left: 20%;
+}
+
+.paint-drip-2 {
+  top: 45%;
+  right: 25%;
+  background: linear-gradient(to bottom, #2C2B28, transparent);
+}
+
+/* Color Palette Swatches */
+.color-swatch {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  opacity: 0.7;
+  z-index: -1;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.swatch-orange {
+  background: var(--primary-orange);
+  top: 25%;
+  left: 5%;
+  transform: rotate(-10deg);
+}
+
+.swatch-blue {
+  background: #4A90B8;
+  top: 55%;
+  right: 10%;
+  transform: rotate(20deg);
+}
+
+.swatch-green {
+  background: #7CB342;
+  bottom: 30%;
+  left: 8%;
+  transform: rotate(-25deg);
+}
+
+.swatch-red {
+  background: #E53935;
+  bottom: 15%;
+  right: 20%;
+  transform: rotate(15deg);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
