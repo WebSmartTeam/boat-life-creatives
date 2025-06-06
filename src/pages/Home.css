@@ -10,6 +10,18 @@
   background: linear-gradient(135deg, var(--cream-white) 0%, var(--warm-white) 100%);
   position: relative;
   overflow: hidden;
+  animation: heroEntrance 1s ease-out;
+}
+
+@keyframes heroEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Paint Splash Accent */
@@ -38,6 +50,28 @@
   50% { 
     transform: translateY(-20px) rotate(5deg);
   }
+}
+
+/* Paint Stroke Divider */
+.paint-stroke-divider {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  margin: -40px 0;
+  z-index: 10;
+  overflow: visible;
+}
+
+.paint-stroke-divider img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  max-width: 2000px;
+  height: auto;
+  opacity: 0.7;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.05));
 }
 
 .hero::before {
@@ -75,12 +109,28 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   box-shadow: var(--shadow-md);
+  animation: badgePop 0.6s ease-out 0.3s both;
+}
+
+@keyframes badgePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(10px);
+  }
+  50% {
+    transform: scale(1.05) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 .hero h1 {
   margin-bottom: var(--space-6);
   line-height: 1.1;
   color: var(--deep-charcoal);
+  animation: heroSlideIn 0.8s ease-out 0.4s both;
 }
 
 .hero-subtitle {
@@ -88,6 +138,7 @@
   color: var(--medium-grey);
   margin-bottom: var(--space-8);
   line-height: 1.6;
+  animation: heroSlideIn 0.8s ease-out 0.5s both;
 }
 
 .hero-features {
@@ -95,6 +146,18 @@
   gap: var(--space-4);
   margin-bottom: var(--space-8);
   flex-wrap: wrap;
+  animation: heroSlideIn 0.8s ease-out 0.6s both;
+}
+
+@keyframes heroSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .feature-item {
@@ -124,11 +187,24 @@
   display: flex;
   gap: var(--space-4);
   flex-wrap: wrap;
+  animation: heroSlideIn 0.8s ease-out 0.7s both;
 }
 
 .hero-visual {
   position: relative;
   height: 600px;
+  animation: heroImageReveal 1s ease-out 0.5s both;
+}
+
+@keyframes heroImageReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
 }
 
 .hero-image-frame {
@@ -372,12 +448,11 @@
 }
 
 .work-image {
-  height: 350px;
   width: 100%;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
   transition: all var(--transition-base);
+  overflow: hidden;
 }
 
 .work-image:hover {
@@ -387,8 +462,8 @@
 
 .work-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
   transition: transform var(--transition-slow);
 }
 
@@ -404,6 +479,36 @@
 .cta {
   color: white;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/client-images/Blue strokes background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.cta-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Darken slightly for text readability */
+}
+
+.cta .container {
+  position: relative;
+  z-index: 1;
 }
 
 .cta h2 {
@@ -429,26 +534,31 @@
 /* CTA BUTTON VARIANTS */
 .btn-white {
   background: white;
-  color: var(--primary-orange);
+  color: var(--deep-charcoal);
   border-color: white;
+  font-weight: 700;
 }
 
 .btn-white:hover {
-  background: var(--warm-white);
-  color: var(--primary-orange-dark);
-  border-color: var(--warm-white);
+  background: var(--primary-orange);
+  color: white;
+  border-color: var(--primary-orange);
+  transform: translateY(-2px);
 }
 
 .btn-outline-white {
   background: transparent;
   color: white;
   border-color: white;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .btn-outline-white:hover {
-  background: white;
-  color: var(--primary-orange);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
   border-color: white;
+  transform: translateY(-2px);
 }
 
 /* RESPONSIVE DESIGN */
@@ -522,10 +632,6 @@
     gap: var(--space-4);
   }
   
-  .work-image {
-    height: 300px;
-  }
-  
   .cta-actions {
     flex-direction: column;
     align-items: center;
@@ -563,9 +669,5 @@
   
   .image-block {
     height: 300px;
-  }
-  
-  .work-image {
-    height: 250px;
   }
 }

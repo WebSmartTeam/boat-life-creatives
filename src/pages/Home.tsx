@@ -50,6 +50,11 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Paint Stroke Divider */}
+      <div className="paint-stroke-divider">
+        <img src="/client-images/paint stroke .png" alt="" />
+      </div>
+
       {/* Services Section */}
       <section className="services section">
         <div className="container">
@@ -232,7 +237,8 @@ const Home = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="cta section bg-primary">
+      <section className="cta section">
+        <div className="cta-background"></div>
         <div className="container">
           <div className="cta-content text-center">
             <h2 className="fade-in">Need A Quote?</h2>
