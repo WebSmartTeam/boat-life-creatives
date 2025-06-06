@@ -111,6 +111,7 @@ const About = () => {
                     src="/images/residential/20250606_1638_Freshly Painted Interiors_simple_compose_01jx2eq5a8f28ryq8v2s832b32.png"
                     alt="Residential painting expertise"
                   />
+                </div>
               </div>
               <div className="experience-content">
                 <h3>Property Expert</h3>
