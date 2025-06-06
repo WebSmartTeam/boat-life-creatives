@@ -45,12 +45,12 @@
 /* Paint Splash Accent */
 .paint-splash-accent {
   position: absolute;
-  top: 5%;
-  left: 10%;
-  width: 350px;
-  height: 350px;
-  opacity: 0.15;
-  z-index: 1;
+  top: 15%;
+  left: 5%;
+  width: 500px;
+  height: 500px;
+  opacity: 0.25;
+  z-index: 0;
   animation: floatSplash 15s ease-in-out infinite;
 }
 
@@ -100,6 +100,8 @@
   align-items: center;
   min-height: 80vh;
   padding: 0 var(--space-8);
+  position: relative;
+  z-index: 2;
 }
 
 .hero-content {
