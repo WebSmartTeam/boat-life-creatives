@@ -62,7 +62,7 @@ const Home = () => {
           
           <div className="services-grid grid grid-3">
             <div className="service-card card fade-in">
-              <div className="service-image image-frame">
+              <div className="service-image">
                 <img 
                   src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5bate4db61w6mqvjymv9.png"
                   alt="Marine painting services"
@@ -87,7 +87,7 @@ const Home = () => {
             </div>
 
             <div className="service-card card fade-in">
-              <div className="service-image image-frame">
+              <div className="service-image">
                 <img 
                   src="/images/residential/20250605_2203_Freshly Painted Spaces_simple_compose_01jx0eybf2e56ahkyqhj27f4ae.png"
                   alt="Residential painting services"
@@ -112,7 +112,7 @@ const Home = () => {
             </div>
 
             <div className="service-card card fade-in">
-              <div className="service-image image-frame">
+              <div className="service-image">
                 <img 
                   src="/images/commercial/20250606_1639_Sleek Modern Office_simple_compose_01jx2ew9v0e9f8bk7cbqfbmz8q.png"
                   alt="Commercial painting services"
