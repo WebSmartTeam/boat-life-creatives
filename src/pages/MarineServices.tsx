@@ -5,24 +5,30 @@ const MarineServices = () => {
   return (
     <div className="services-page marine-services">
       <section className="services-hero">
+        <div className="paint-splash-accent">
+          <img src="/client-images/paint splash.png" alt="" />
+        </div>
         <div className="container">
-          <div className="grid grid-2">
+          <div className="services-hero-grid">
             <div className="services-content">
-              <h1 className="fade-in">Marine Painting Services</h1>
+              <div className="hero-badge fade-in">🛥️ 15 Years Marine Experience</div>
+              <h1 className="fade-in">Boat Painting That Lasts</h1>
               <p className="lead fade-in">
-                Expert marine coatings for boats that demand the finest protection and finish. From luxury yachts to working vessels, we deliver marine-grade excellence.
+                15 years painting boats of all sizes. I know what works in saltwater, what doesn't, 
+                and how to make your boat look brilliant again.
               </p>
               <div className="services-cta fade-in">
-                <Link to="/booking" className="btn btn-primary">Get Marine Quote</Link>
-                <a href="tel:07453817030" className="btn btn-secondary">Call 07453 817030</a>
+                <Link to="/booking" className="btn btn-primary btn-large">Get Free Quote</Link>
+                <a href="tel:07453817030" className="btn btn-secondary btn-large">📞 Call Now</a>
               </div>
             </div>
-            <div className="services-image">
-              <img 
-                src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5barefj8db6kg1mg1dqf.png"
-                alt="Professional yacht hull refinishing"
-                className="image-full-width"
-              />
+            <div className="services-image fade-in">
+              <div className="image-frame watercolor">
+                <img 
+                  src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5barefj8db6kg1mg1dqf.png"
+                  alt="Professional yacht hull refinishing"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -30,10 +36,13 @@ const MarineServices = () => {
 
       <section className="services-details section">
         <div className="container">
-          <h2 className="section-title">Our Marine Specialities</h2>
+          <div className="section-header text-center">
+            <h2 className="fade-in">What I Do For Boats</h2>
+            <p className="lead fade-in">From quick anti-foul jobs to full resprays - all done properly</p>
+          </div>
           <div className="services-grid grid grid-2">
             
-            <div className="service-detail fade-in">
+            <div className="service-detail card fade-in">
               <div className="service-image">
                 <img 
                   src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5bate4db61w6mqvjymv9.png"
@@ -41,20 +50,20 @@ const MarineServices = () => {
                 />
               </div>
               <div className="service-content">
-                <h3>Hull Restoration & Refinishing</h3>
-                <p>Complete hull transformation using marine-grade primers, base coats, and protective finishes designed to withstand harsh marine environments.</p>
+                <h3>Hull Work</h3>
+                <p>Full hull resprays or patch repairs. Strip back the old, prep it right, apply marine-grade paint that'll last years not months.</p>
                 <ul className="service-features">
-                  <li>Fibreglass repair and fairing</li>
-                  <li>Epoxy primer application</li>
-                  <li>High-build undercoats</li>
-                  <li>Premium topcoat finishes</li>
-                  <li>Gel coat restoration</li>
+                  <li>Fibreglass repairs if needed</li>
+                  <li>Proper prep - the key to lasting finish</li>
+                  <li>Marine primers & topcoats</li>
+                  <li>Gel coat work</li>
+                  <li>Match existing colours</li>
                 </ul>
-                <p className="turnaround"><strong>Typical turnaround:</strong> 5-10 days depending on vessel size</p>
+                <p className="turnaround"><strong>Time needed:</strong> 5-10 days for full hull</p>
               </div>
             </div>
 
-            <div className="service-detail fade-in">
+            <div className="service-detail card fade-in">
               <div className="service-image">
                 <img 
                   src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5bavfm7tjnzchcfq5emv.png"
@@ -62,20 +71,20 @@ const MarineServices = () => {
                 />
               </div>
               <div className="service-content">
-                <h3>Anti-Foul Application</h3>
-                <p>Professional anti-fouling using the latest copper-free and biocide technologies for maximum protection and environmental responsibility.</p>
+                <h3>Anti-Fouling</h3>
+                <p>Keep the barnacles off and your boat running smooth. I know which anti-foul works best in our waters.</p>
                 <ul className="service-features">
-                  <li>Hull cleaning and preparation</li>
-                  <li>Premium anti-foul selection</li>
-                  <li>Even application techniques</li>
-                  <li>Propeller and running gear</li>
-                  <li>Annual maintenance programs</li>
+                  <li>Clean & prep the hull properly</li>
+                  <li>Right anti-foul for your boat</li>
+                  <li>Even coats, no missed spots</li>
+                  <li>Props and running gear too</li>
+                  <li>Annual reminder service</li>
                 </ul>
-                <p className="turnaround"><strong>Typical turnaround:</strong> 1-3 days</p>
+                <p className="turnaround"><strong>Time needed:</strong> 1-3 days</p>
               </div>
             </div>
 
-            <div className="service-detail fade-in">
+            <div className="service-detail card fade-in">
               <div className="service-image">
                 <img 
                   src="/images/marine/20250606_1652_Sleek Boat Deck_simple_compose_01jx2fhsjxe9vvmmwspyxw55gm.png"
@@ -83,20 +92,20 @@ const MarineServices = () => {
                 />
               </div>
               <div className="service-content">
-                <h3>Interior Cabin Work</h3>
-                <p>Transform your boat's interior with moisture-resistant coatings and finishes that maintain their beauty in the challenging marine environment.</p>
+                <h3>Cabin & Interior</h3>
+                <p>Freshen up the inside. Marine paints that won't peel in damp conditions, varnish that protects your woodwork.</p>
                 <ul className="service-features">
-                  <li>Cabin walls and ceilings</li>
-                  <li>Moisture-resistant primers</li>
-                  <li>Mildew-resistant topcoats</li>
-                  <li>Wood staining and varnishing</li>
-                  <li>Deck and cockpit refinishing</li>
+                  <li>Cabin walls & ceilings</li>
+                  <li>Moisture-resistant paints</li>
+                  <li>No mould, no mildew</li>
+                  <li>Varnish work done right</li>
+                  <li>Deck painting too</li>
                 </ul>
-                <p className="turnaround"><strong>Typical turnaround:</strong> 3-7 days</p>
+                <p className="turnaround"><strong>Time needed:</strong> 3-7 days</p>
               </div>
             </div>
 
-            <div className="service-detail fade-in">
+            <div className="service-detail card fade-in">
               <div className="service-image">
                 <img 
                   src="/images/gallery/20250605_2212_Macro Paint Details_simple_compose_01jx0fep3bev8tv7pj7e4ts85j.png"
@@ -104,53 +113,60 @@ const MarineServices = () => {
                 />
               </div>
               <div className="service-content">
-                <h3>Specialist Marine Coatings</h3>
-                <p>Advanced protective systems including non-slip surfaces, underwater coatings, and specialised finishes for extreme marine conditions.</p>
+                <h3>Other Boat Work</h3>
+                <p>Non-slip decks, metalwork, custom jobs. If it's on a boat and needs painting, I've probably done it before.</p>
                 <ul className="service-features">
                   <li>Non-slip deck coatings</li>
-                  <li>Underwater hull treatments</li>
-                  <li>Radar arch and metalwork</li>
-                  <li>Custom colour matching</li>
-                  <li>Insurance repair work</li>
+                  <li>Metalwork & rails</li>
+                  <li>Match any colour</li>
+                  <li>Insurance repairs</li>
+                  <li>Quick patch jobs</li>
                 </ul>
-                <p className="turnaround"><strong>Typical turnaround:</strong> 2-5 days</p>
+                <p className="turnaround"><strong>Time needed:</strong> Depends on the job</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="marine-guarantee section" style={{backgroundColor: 'var(--light-neutral)'}}>
+      <section className="marine-guarantee section bg-light">
         <div className="container">
-          <div className="guarantee-content">
-            <h2>Marine-Grade Guarantee</h2>
-            <p>Every marine project comes with our comprehensive 3-year guarantee, covering both materials and workmanship. We understand the demanding marine environment and stand behind our work.</p>
-            <div className="guarantee-features grid grid-3">
-              <div className="guarantee-item">
-                <h4>🌊 Weather Protection</h4>
-                <p>All work guaranteed against UV degradation, salt water exposure, and extreme weather conditions.</p>
-              </div>
-              <div className="guarantee-item">
-                <h4>⚓ Marine-Grade Materials</h4>
-                <p>Only the finest marine coatings from trusted brands like International, Awlgrip, and Alexseal.</p>
-              </div>
-              <div className="guarantee-item">
-                <h4>🔧 Expert Application</h4>
-                <p>Certified marine coating specialists with years of experience in yacht and boat refinishing.</p>
-              </div>
+          <div className="section-header text-center">
+            <h2 className="fade-in">Why Boat Owners Trust Me</h2>
+            <p className="lead fade-in">15 years at the marina means I know boats</p>
+          </div>
+          <div className="guarantee-features grid grid-3">
+            <div className="guarantee-item card fade-in">
+              <h4>🌊 Know The Sea</h4>
+              <p>Salt water's tough on paint. I use marine products that actually last in our conditions.</p>
+            </div>
+            <div className="guarantee-item card fade-in">
+              <h4>⚓ Proper Materials</h4>
+              <p>International, Hempel, Jotun - I use the brands that work, not the cheapest tin on the shelf.</p>
+            </div>
+            <div className="guarantee-item card fade-in">
+              <h4>🔧 Done Right</h4>
+              <p>Prep work's everything with boats. Rush it and you'll be repainting next year. I don't rush.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="marine-cta section-large">
+      <section className="cta section">
+        <div className="cta-background"></div>
         <div className="container">
-          <div className="cta-content">
-            <h2>Ready to Restore Your Vessel?</h2>
-            <p>Get a detailed quote for your marine painting project. We provide comprehensive assessments and transparent pricing.</p>
-            <div className="cta-actions">
-              <Link to="/booking" className="btn btn-primary btn-large">Book Marine Assessment</Link>
-              <Link to="/gallery" className="btn btn-secondary">View Marine Portfolio</Link>
+          <div className="cta-content text-center">
+            <h2 className="fade-in">Let's Look At Your Boat</h2>
+            <p className="lead fade-in">
+              Free quotes, honest advice about what needs doing. Call me and we'll sort it.
+            </p>
+            <div className="cta-actions fade-in">
+              <a href="tel:07453817030" className="btn btn-large btn-white">
+                📞 Call: 07453 817030
+              </a>
+              <Link to="/booking" className="btn btn-large btn-outline-white">
+                Book Quote Visit
+              </Link>
             </div>
           </div>
         </div>

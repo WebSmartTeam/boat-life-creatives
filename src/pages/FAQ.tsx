@@ -15,60 +15,73 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Do you work weekends?",
-      answer: "Yes, we offer flexible scheduling including weekends and evenings, especially for commercial projects where minimal business disruption is essential."
+      answer: "Yes, especially for business jobs. I work around your schedule - evenings, weekends, whatever suits you."
     },
     {
-      question: "Do I need to prep anything before you arrive?",
-      answer: "We handle all preparation work including furniture protection, surface cleaning, and masking. You don't need to do anything except provide access to the work areas."
+      question: "Do I need to move furniture?",
+      answer: "No, I'll move what needs moving and cover everything else. Dust sheets down, surfaces protected - you shouldn't find paint where it shouldn't be."
     },
     {
-      question: "How long does marine anti-foul take?",
-      answer: "Typically 1-3 days depending on the size of your vessel. This includes hull cleaning, preparation, primer application, and anti-foul coating with proper drying time between coats."
+      question: "How long does anti-foul take?",
+      answer: "Depends on the boat size, but usually 1-3 days. Clean the hull, prep it properly, apply the anti-foul with proper drying time between coats."
     },
     {
-      question: "What's included in your 3-year guarantee?",
-      answer: "Our guarantee covers all materials and workmanship against defects, peeling, or premature wear under normal conditions. We'll return to fix any issues at no additional cost."
+      question: "What guarantee do I get?",
+      answer: "If the work fails because of something I did wrong, I'll come back and fix it. Fair materials, proper application - that's what you're paying for."
     },
     {
-      question: "Can you work around my business hours?",
-      answer: "Absolutely. We specialise in out-of-hours commercial work, including evenings, weekends, and holidays to ensure zero disruption to your business operations."
+      question: "Can you work around my business?",
+      answer: "Absolutely. I do lots of shops and offices overnight or weekends. You open Monday morning and everything's done."
     },
     {
-      question: "What types of paint do you use?",
-      answer: "We use only premium brands: marine-grade coatings from International and Awlgrip for boats, Farrow & Ball and Little Greene for homes, and commercial-grade systems for businesses."
+      question: "What paint do you use?",
+      answer: "Good stuff. International and Hempel for boats, Dulux and Crown for houses, whatever suits your budget. I'll advise what works best."
     },
     {
-      question: "How do you protect my furniture and belongings?",
-      answer: "We use professional-grade protective sheeting, masking tape, and drop cloths. All furniture is carefully covered or moved, and we complete a thorough cleanup after each session."
+      question: "Will you make a mess?",
+      answer: "I'm a tidy worker. Dust sheets down, everything protected, clean up as I go. You get your space back ready to use."
     },
     {
-      question: "Can you match existing colours?",
-      answer: "Yes, we offer professional colour matching services. We can match any existing colour or help you choose complementary colours that enhance your space."
+      question: "Can you match my existing colour?",
+      answer: "Yes, I can match pretty much any colour. Or if you want something different, I'll help you pick something that works."
     },
     {
-      question: "What if weather affects my exterior project?",
-      answer: "We monitor weather conditions closely and will reschedule if necessary. Exterior work requires dry conditions and appropriate temperatures for optimal results."
+      question: "What about weather for outside work?",
+      answer: "Can't paint in the rain or when it's too cold. I'll check the forecast and let you know if we need to move the dates."
     },
     {
-      question: "Do you provide free quotes?",
-      answer: "Yes, all quotes are completely free with no obligation. We'll visit your site, assess the work required, and provide a detailed written estimate."
+      question: "How much do you charge for quotes?",
+      answer: "Nothing. I'll come look at the job, tell you what needs doing, give you a fair price. No obligation."
+    },
+    {
+      question: "How quickly can you start?",
+      answer: "Usually within a week or two, sometimes sooner. Depends what I've got on. Emergency jobs I can often fit in quicker."
+    },
+    {
+      question: "Do you clean your brushes in my sink?",
+      answer: "No, I bring my own water container and clean up kit. Your sinks stay clean."
     }
   ];
 
   return (
     <div className="faq-page">
       <section className="faq-hero">
+        <div className="paint-splash-accent">
+          <img src="/client-images/paint splash.png" alt="" />
+        </div>
         <div className="container">
-          <h1>Frequently Asked Questions</h1>
-          <p className="lead">Everything you need to know about our painting services</p>
+          <div className="hero-content text-center">
+            <h1 className="fade-in">Common Questions</h1>
+            <p className="lead fade-in">Things people usually ask me about painting work</p>
+          </div>
         </div>
       </section>
 
-      <section className="faq-content">
+      <section className="faq-content section">
         <div className="container">
           <div className="faq-list">
             {faqs.map((faq, index) => (
-              <div key={index} className="faq-item">
+              <div key={index} className="faq-item card fade-in">
                 <button
                   className={`faq-question ${openItems.includes(index) ? 'active' : ''}`}
                   onClick={() => toggleItem(index)}
@@ -85,14 +98,21 @@ const FAQ = () => {
         </div>
       </section>
 
-      <section className="faq-contact section" style={{backgroundColor: 'var(--light-neutral)'}}>
+      <section className="cta section">
+        <div className="cta-background"></div>
         <div className="container">
-          <div className="contact-prompt">
-            <h2>Still have questions?</h2>
-            <p>We're here to help! Get in touch for personalised answers to your specific project needs.</p>
-            <div className="contact-options">
-              <a href="tel:07453817030" className="btn btn-primary">Call 07453 817030</a>
-              <a href="mailto:info@boatlifecreatives.co.uk" className="btn btn-secondary">Email Us</a>
+          <div className="cta-content text-center">
+            <h2 className="fade-in">Still Got Questions?</h2>
+            <p className="lead fade-in">
+              Just give me a call. Easier to explain things properly over the phone.
+            </p>
+            <div className="cta-actions fade-in">
+              <a href="tel:07453817030" className="btn btn-large btn-white">
+                📞 Call: 07453 817030
+              </a>
+              <a href="mailto:info@boatlifecreatives.co.uk" className="btn btn-large btn-outline-white">
+                Send Email
+              </a>
             </div>
           </div>
         </div>

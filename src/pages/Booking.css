@@ -1,68 +1,109 @@
-/* Booking Page Styles */
+/* BOOKING PAGE - GET QUOTE FORM */
 
 .booking-page {
-  margin-top: 80px;
+  margin-top: 90px; /* Account for fixed header with larger logo */
 }
 
+/* BOOKING HERO */
 .booking-hero {
-  padding: var(--space-xl) 0;
-  background: linear-gradient(135deg, var(--light-neutral) 0%, var(--mid-neutral) 100%);
-  text-align: center;
+  padding: var(--space-16) 0 var(--space-12);
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAFAF9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Paint Splash Accent */
+.booking-hero .paint-splash-accent {
+  position: absolute;
+  top: -20%;
+  left: -8%;
+  width: 350px;
+  height: 350px;
+  opacity: 0.15;
+  z-index: 0;
+  animation: floatSplash 22s ease-in-out infinite;
+  transform: rotate(-15deg);
+}
+
+.booking-hero .hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .booking-hero h1 {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-4);
+  color: var(--deep-charcoal);
 }
 
+.booking-hero .lead {
+  color: var(--medium-grey);
+  font-size: var(--text-lg);
+  line-height: 1.6;
+}
+
+/* BOOKING CONTENT */
 .booking-content {
-  padding: var(--space-xl) 0;
+  position: relative;
 }
 
 .booking-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: var(--space-xxl);
+  gap: var(--space-16);
   max-width: 1200px;
   margin: 0 auto;
+  align-items: start;
+}
+
+/* FORM SECTION */
+.booking-form-section {
+  background: white;
+  padding: var(--space-12);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
 .booking-form-section h2 {
-  margin-bottom: var(--space-lg);
-  color: var(--dark-neutral);
+  margin-bottom: var(--space-8);
+  color: var(--deep-charcoal);
+  font-size: var(--text-2xl);
 }
 
 .booking-form {
-  background: var(--white);
-  padding: var(--space-xl);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 10px 30px var(--shadow-light);
+  /* Form styling already handled by card class */
 }
 
 .form-group {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-6);
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
-  font-weight: var(--font-weight-semibold);
-  color: var(--dark-neutral);
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+  color: var(--charcoal);
+  font-size: var(--text-base);
 }
 
 .form-input {
   width: 100%;
-  padding: 0.875rem 1rem;
-  border: 2px solid var(--mid-neutral);
+  padding: var(--space-4);
+  border: 2px solid #E0E0E0;
   border-radius: var(--radius-md);
-  font-size: 1rem;
-  transition: var(--transition-fast);
-  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  transition: all var(--transition-base);
+  font-family: var(--font-body);
+  background: white;
+  color: var(--charcoal);
 }
 
 .form-input:focus {
   outline: none;
   border-color: var(--primary-orange);
   box-shadow: 0 0 0 3px rgba(242, 124, 42, 0.1);
+  background: white;
 }
 
 .form-input:hover {
@@ -71,79 +112,176 @@
 
 select.form-input {
   cursor: pointer;
+  background: white;
 }
 
 textarea.form-input {
   resize: vertical;
-  min-height: 100px;
+  min-height: 120px;
+  line-height: 1.5;
 }
 
 .submit-btn {
   width: 100%;
-  margin-top: var(--space-md);
+  margin-top: var(--space-4);
+  font-weight: 600;
 }
 
+/* CONTACT INFO SECTION */
 .contact-info-section {
-  background: var(--light-neutral);
-  padding: var(--space-xl);
-  border-radius: var(--radius-lg);
-  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
 }
 
 .contact-info-section h2 {
-  margin-bottom: var(--space-lg);
-  color: var(--dark-neutral);
+  color: var(--deep-charcoal);
+  font-size: var(--text-xl);
+  margin-bottom: 0;
 }
 
 .contact-methods {
-  margin-bottom: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
 }
 
 .contact-method {
-  margin-bottom: var(--space-lg);
+  background: white;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.contact-method:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 .contact-method h4 {
-  margin-bottom: 0.5rem;
-  color: var(--dark-neutral);
+  margin-bottom: var(--space-3);
+  color: var(--deep-charcoal);
+  font-size: var(--text-lg);
+}
+
+.contact-method p {
+  margin-bottom: var(--space-2);
 }
 
 .contact-method a {
   color: var(--primary-orange);
   text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  transition: var(--transition-fast);
+  font-weight: 600;
+  font-size: var(--text-lg);
+  transition: color var(--transition-fast);
+}
+
+.contact-method a.phone-link {
+  font-size: var(--text-xl);
+  font-weight: 700;
 }
 
 .contact-method a:hover {
-  color: var(--dark-neutral);
+  color: var(--primary-orange-dark);
   text-decoration: underline;
 }
 
+.contact-note {
+  font-size: var(--text-sm);
+  color: var(--medium-grey);
+  font-style: italic;
+}
+
+/* BOOKING BENEFITS */
+.booking-benefits {
+  background: white;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
 .booking-benefits h3 {
-  margin-bottom: var(--space-md);
-  color: var(--dark-neutral);
+  margin-bottom: var(--space-4);
+  color: var(--deep-charcoal);
+  font-size: var(--text-lg);
 }
 
 .booking-benefits ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .booking-benefits li {
-  margin-bottom: 0.75rem;
-  color: var(--dark-grey);
-  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-3);
+  color: var(--charcoal);
+  font-weight: 500;
+  font-size: var(--text-base);
+  line-height: 1.5;
 }
 
-/* Responsive Design */
+.booking-benefits li:last-child {
+  margin-bottom: 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .booking-grid {
+    gap: var(--space-12);
+  }
+}
+
 @media (max-width: 768px) {
+  .booking-hero {
+    padding: var(--space-12) 0;
+  }
+
   .booking-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-8);
   }
   
-  .booking-form,
-  .contact-info-section {
-    padding: var(--space-lg);
+  .booking-form-section {
+    padding: var(--space-8);
+  }
+
+  .contact-method {
+    padding: var(--space-4);
+  }
+
+  .booking-benefits {
+    padding: var(--space-4);
+  }
+
+  .form-input {
+    padding: var(--space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-hero {
+    padding: var(--space-8) 0;
+  }
+
+  .booking-form-section {
+    padding: var(--space-6);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-4);
+  }
+
+  .contact-method {
+    padding: var(--space-3);
+  }
+
+  .contact-method h4 {
+    font-size: var(--text-base);
+  }
+
+  .contact-method a.phone-link {
+    font-size: var(--text-lg);
   }
 }

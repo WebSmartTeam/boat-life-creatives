@@ -26,17 +26,22 @@ const Booking = () => {
   return (
     <div className="booking-page">
       <section className="booking-hero">
+        <div className="paint-splash-accent">
+          <img src="/client-images/paint splash.png" alt="" />
+        </div>
         <div className="container">
-          <h1>Get Your Free Quote</h1>
-          <p className="lead">Ready to transform your space? Contact us for a professional consultation and detailed quote.</p>
+          <div className="hero-content text-center">
+            <h1 className="fade-in">Get A Quote</h1>
+            <p className="lead fade-in">Give me a call or fill this in - I'll get back to you with a fair price, no obligation</p>
+          </div>
         </div>
       </section>
 
-      <section className="booking-content">
+      <section className="booking-content section">
         <div className="container">
           <div className="booking-grid">
-            <div className="booking-form-section">
-              <h2>Request a Quote</h2>
+            <div className="booking-form-section card">
+              <h2>Tell Me About Your Job</h2>
               <form onSubmit={handleSubmit} className="booking-form">
                 <div className="form-group">
                   <label htmlFor="name">Full Name *</label>
@@ -78,7 +83,7 @@ const Booking = () => {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="service">Service Type *</label>
+                  <label htmlFor="service">What Type of Job? *</label>
                   <select
                     id="service"
                     name="service"
@@ -87,15 +92,15 @@ const Booking = () => {
                     required
                     className="form-input"
                   >
-                    <option value="">Select a service...</option>
-                    <option value="marine">Marine Painting</option>
-                    <option value="residential">Residential Painting</option>
-                    <option value="commercial">Commercial Painting</option>
+                    <option value="">Choose one...</option>
+                    <option value="marine">🛥️ Boat/Marine Work</option>
+                    <option value="residential">🏠 House/Home Work</option>
+                    <option value="commercial">🏢 Business/Shop Work</option>
                   </select>
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="message">Project Details</label>
+                  <label htmlFor="message">Tell Me About The Job</label>
                   <textarea
                     id="message"
                     name="message"
@@ -103,43 +108,40 @@ const Booking = () => {
                     onChange={handleChange}
                     rows={4}
                     className="form-input"
-                    placeholder="Tell us about your project..."
+                    placeholder="What needs painting? How big? When do you want it done? Any other details..."
                   />
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-large submit-btn">
-                  Get Free Quote
+                  Send Me The Details
                 </button>
               </form>
             </div>
 
             <div className="contact-info-section">
-              <h2>Contact Information</h2>
+              <h2>Or Just Call Me</h2>
               <div className="contact-methods">
-                <div className="contact-method">
-                  <h4>📞 Phone</h4>
-                  <p><a href="tel:07453817030">07453 817030</a></p>
+                <div className="contact-method card">
+                  <h4>📞 Phone (Best Way)</h4>
+                  <p><a href="tel:07453817030" className="phone-link">07453 817030</a></p>
+                  <span className="contact-note">9am-6pm, 7 days</span>
                 </div>
                 
-                <div className="contact-method">
+                <div className="contact-method card">
                   <h4>📧 Email</h4>
                   <p><a href="mailto:info@boatlifecreatives.co.uk">info@boatlifecreatives.co.uk</a></p>
-                </div>
-                
-                <div className="contact-method">
-                  <h4>🌐 Website</h4>
-                  <p><a href="https://www.boatlifecreatives.co.uk">www.boatlifecreatives.co.uk</a></p>
+                  <span className="contact-note">Usually reply same day</span>
                 </div>
               </div>
 
-              <div className="booking-benefits">
-                <h3>Why Choose Us?</h3>
+              <div className="booking-benefits card">
+                <h3>What You Get</h3>
                 <ul>
-                  <li>✅ Free, no-obligation quotes</li>
-                  <li>✅ 3-year guarantee on all work</li>
-                  <li>✅ Professional, reliable service</li>
-                  <li>✅ Premium quality materials</li>
-                  <li>✅ Flexible scheduling</li>
+                  <li>✅ Free quotes, no pressure</li>
+                  <li>✅ Turn up when I say I will</li>
+                  <li>✅ Fair prices, quality work</li>
+                  <li>✅ Clean up after myself</li>
+                  <li>✅ 15 years experience</li>
                 </ul>
               </div>
             </div>
