@@ -4,7 +4,7 @@
   background-color: var(--charcoal);
   color: white;
   padding: var(--space-16) 0 var(--space-8);
-  margin-top: var(--space-20);
+  margin-top: 0;
 }
 
 .footer-content {
