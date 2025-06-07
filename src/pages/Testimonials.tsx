@@ -22,7 +22,7 @@ const Testimonials = () => {
       project: "Shop Refresh",
       rating: 5,
       text: "Did the whole job over a weekend. Shop looked brilliant Monday morning and we didn't lose any trading time.",
-      image: "/images/commercial/20250606_1639_Sleek Modern Office_simple_compose_01jx2ew9v0e9f8bk7cbqfbmz8q.png"
+      image: "/images/commercial/20250606_1643_Elegant Retail Showcase_simple_compose_01jx2f0a27f6c8y1mp1cz2vrsk.png"
     },
     {
       name: "Michael R.",
