@@ -5,6 +5,10 @@ import './Header.css';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -29,7 +33,7 @@ const Header = () => {
                 <span className="nav-link">Services</span>
                 <div className="mega-menu">
                   <div className="mega-menu-content">
-                    <Link to="/services/marine" className="mega-menu-item">
+                    <Link to="/services/marine" className="mega-menu-item" onClick={handleLinkClick}>
                       <img 
                         src="/images/marine/20250605_2207_Yacht Hull Refinishing_simple_compose_01jx0f5barefj8db6kg1mg1dqf.png" 
                         alt="Marine Services"
@@ -40,7 +44,7 @@ const Header = () => {
                         <p>Professional boat painting, hull work, anti-fouling and marine finishes</p>
                       </div>
                     </Link>
-                    <Link to="/services/residential" className="mega-menu-item">
+                    <Link to="/services/residential" className="mega-menu-item" onClick={handleLinkClick}>
                       <img 
                         src="/images/residential/20250605_2203_Freshly Painted Spaces_simple_compose_01jx0eybf2e56ahkyqhj27f4ae.png" 
                         alt="Residential Services"
@@ -51,7 +55,7 @@ const Header = () => {
                         <p>Interior & exterior house painting, feature walls, complete property refresh</p>
                       </div>
                     </Link>
-                    <Link to="/services/commercial" className="mega-menu-item">
+                    <Link to="/services/commercial" className="mega-menu-item" onClick={handleLinkClick}>
                       <img 
                         src="/images/commercial/20250606_1639_Sleek Modern Office_simple_compose_01jx2ew9v0e9f8bk7cbqfbmz8q.png" 
                         alt="Commercial Services"
@@ -68,7 +72,7 @@ const Header = () => {
               <Link to="/gallery" className="nav-link">Gallery</Link>
               <Link to="/testimonials" className="nav-link">Testimonials</Link>
               <Link to="/faq" className="nav-link">FAQ</Link>
-              <Link to="/booking" className="nav-link booking-btn">Book Now</Link>
+              <Link to="/booking" className="nav-link booking-btn" onClick={handleLinkClick}>Book Now</Link>
             </nav>
           </div>
 
