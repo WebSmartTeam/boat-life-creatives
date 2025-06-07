@@ -298,7 +298,15 @@
     text-align: center;
     width: 100%;
     border-radius: var(--radius-md);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: none;
+    outline: none;
+  }
+
+  /* Remove focus outlines on mobile */
+  .nav-link:focus,
+  .mega-menu-item:focus {
+    outline: none;
+    box-shadow: none;
   }
 
   /* Hide About, Gallery, Testimonials, FAQ links on mobile */
@@ -338,6 +346,11 @@
   /* Hide service descriptions on mobile to save space */
   .mega-menu-text p {
     display: none;
+  }
+
+  /* Remove padding under headings in mobile menu */
+  .mega-menu-text h4 {
+    margin-bottom: 0;
   }
 
   .booking-btn {
