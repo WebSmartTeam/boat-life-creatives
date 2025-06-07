@@ -301,8 +301,11 @@
     border: 1px solid rgba(0, 0, 0, 0.08);
   }
 
-  /* Hide About link on mobile */
-  .nav-link[href="/about"] {
+  /* Hide About, Gallery, Testimonials, FAQ links on mobile */
+  .nav-link[href="/about"],
+  .nav-link[href="/gallery"],
+  .nav-link[href="/testimonials"], 
+  .nav-link[href="/faq"] {
     display: none;
   }
 
