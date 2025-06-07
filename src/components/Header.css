@@ -300,6 +300,7 @@
     transform: translateY(0) translateX(0);
     opacity: 1;
     visibility: visible;
+    pointer-events: auto !important;
   }
 
   .nav-link {
@@ -309,6 +310,8 @@
     border-radius: var(--radius-md);
     border: none;
     outline: none;
+    pointer-events: auto !important;
+    cursor: pointer !important;
   }
 
   /* Remove focus outlines on mobile */
@@ -332,15 +335,16 @@
 
   .mega-menu {
     position: static;
-    opacity: 1;
-    transform: none;
-    visibility: visible;
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
     box-shadow: none;
     background: var(--warm-white);
     margin-top: var(--space-1);
     border: none;
     width: 100%;
     padding: var(--space-2);
+    pointer-events: auto !important;
   }
   
   .mega-menu-content {
@@ -365,6 +369,12 @@
   /* DISABLE ALL HOVER EFFECTS ON MOBILE */
   .nav-dropdown:hover .mega-menu {
     transform: none !important;
+  }
+
+  .mega-menu-item {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .mega-menu-item:hover {
