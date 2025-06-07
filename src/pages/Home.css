@@ -220,6 +220,19 @@
   z-index: 4;
 }
 
+/* View Gallery button - white background */
+.hero-cta .btn-secondary {
+  background-color: white !important;
+  color: var(--charcoal) !important;
+  border: 2px solid white !important;
+}
+
+.hero-cta .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
 .hero-visual {
   position: relative;
   height: 600px;
