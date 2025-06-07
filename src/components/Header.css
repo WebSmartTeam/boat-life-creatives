@@ -314,11 +314,20 @@
     cursor: pointer !important;
   }
 
-  /* Remove focus outlines on mobile */
+  /* Remove ALL focus outlines and borders on mobile */
   .nav-link:focus,
-  .mega-menu-item:focus {
-    outline: none;
-    box-shadow: none;
+  .nav-link:active,
+  .mega-menu-item:focus,
+  .mega-menu-item:active,
+  .mega-menu-item:visited {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  /* Remove tap highlight on iOS */
+  * {
+    -webkit-tap-highlight-color: transparent !important;
   }
 
   /* Hide About, Gallery, Testimonials, FAQ links on mobile */
@@ -375,11 +384,14 @@
     pointer-events: auto !important;
     cursor: pointer !important;
     -webkit-tap-highlight-color: transparent;
+    display: block !important;
+    text-decoration: none !important;
   }
 
   .mega-menu-item:hover {
     transform: none !important;
     box-shadow: none !important;
+    border-color: transparent !important;
   }
 
   .nav-link:hover {
