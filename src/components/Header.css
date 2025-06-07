@@ -363,6 +363,8 @@
   
   .mega-menu-image {
     height: 80px;
+    pointer-events: auto !important;
+    cursor: pointer !important;
   }
 
   /* Hide service descriptions on mobile to save space */
@@ -373,6 +375,14 @@
   /* Remove padding under headings in mobile menu */
   .mega-menu-text h4 {
     margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  /* Make text area clickable too */
+  .mega-menu-text {
+    pointer-events: auto !important;
+    cursor: pointer !important;
   }
 
   /* DISABLE ALL HOVER EFFECTS ON MOBILE */
@@ -401,7 +411,7 @@
 
   .booking-btn {
     margin-left: 0;
-    margin-top: var(--space-4);
+    margin-top: var(--space-2);
     width: 100%;
     text-align: center;
   }
