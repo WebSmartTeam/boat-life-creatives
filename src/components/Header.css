@@ -140,10 +140,14 @@
   width: 800px;
   max-width: 90vw;
   z-index: 1001;
+  pointer-events: none;
 }
 
 .nav-dropdown:hover .mega-menu {
+  pointer-events: auto;
   transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .mega-menu-content {
@@ -162,6 +166,9 @@
   overflow: hidden;
   background: var(--warm-white);
   border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .mega-menu-item:hover {
