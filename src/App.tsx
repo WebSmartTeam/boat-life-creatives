@@ -4,6 +4,7 @@ import './App.css';
 // Components
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 // Pages
 import Home from './pages/Home';
@@ -19,6 +20,7 @@ import FAQ from './pages/FAQ';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Header />
         <main>
