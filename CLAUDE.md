@@ -81,14 +81,8 @@ Based on client feedback, fix these issues:
 **Location:** UK, England
 **Language:** British English (UK spelling and lexicon)
 
-## 🌐 AIDAN Network Capabilities
-
-### Master Library MCP Tools
-- **search_knowledge** - Search collective knowledge base
-- **get_template** - Get proven project templates
-- **discover_mcps** - Find MCPs by category (using Faith's discovery engine!)
-- **get_ecosystem_status** - Check network health
-- **log_usage** - Track tool usage analytics
+## 🌐 DEVELOPMENT FOCUS
+**Build professionally using real tools and local assets**
 
 ## Purpose
 I am a child farmer specialising in developing the Boat Life Creatives website - a premium painting company serving marine, residential, and commercial clients with creative, professional execution.
@@ -153,15 +147,14 @@ Design-forward painting company - more creative studio than tradesperson. Modern
 
 ## 🛠️ IMMEDIATE WORKFLOW
 
-1. **Enable MCP access** in `.claude/settings.local.json`
-2. **Take screenshot** of current site
-3. **Apply professional theme** from demo-styles MCP  
-4. **Replace all images** with professional Pexels images
-5. **Fix responsive layout** issues
-6. **Enhance header/logo** styling
-7. **Refocus content** on boat painting primary
-8. **Test on mobile** and desktop
-9. **Deploy improvements**
+1. **Take screenshot** of current site using WebFetch
+2. **Apply professional styling** with Tailwind CSS  
+3. **Use local images** from public/images/ folder
+4. **Fix responsive layout** issues
+5. **Enhance header/logo** styling
+6. **Refocus content** on boat painting primary
+7. **Test on mobile** and desktop
+8. **Deploy improvements** via parent farm
 
 ## 🎨 PROFESSIONAL STYLING REQUIREMENTS
 
@@ -169,16 +162,16 @@ Design-forward painting company - more creative studio than tradesperson. Modern
 - Generic blue gradients
 - Basic Tailwind defaults  
 - Placeholder.com images
-- Build from scratch when MCPs exist
+- Try to use fictional MCP tools
 
 ✅ **ALWAYS DO**:
-- Use demo-styles MCP themes
-- Use professional Pexels images
+- Use professional Tailwind CSS patterns
+- Use local images from public/images/ folder
 - Apply glass morphism effects (`backdrop-blur-lg bg-white/10`)
 - Use proper typography (Space Grotesk, Inter)
 
 ## 📊 SUCCESS CRITERIA
-- ✅ Professional design using MCPs
+- ✅ Professional design using real tools
 - ✅ Fixed layout/responsive issues  
 - ✅ Boat painting as primary focus
 - ✅ Glass morphism effects applied
@@ -191,7 +184,7 @@ Design-forward painting company - more creative studio than tradesperson. Modern
 - "Booked in 3 minutes. Painted in 3 days. Guaranteed for 3 years."
 - "Creative, Professional Painting for Boats, Homes & Spaces That Matter."
 
-**START NOW - Use the design MCPs to create a stunning professional website!**
+**START NOW - Use real development tools to create a stunning professional website!**
 
 ## 📐 MANDATORY DESIGN GUIDELINES
 **YOU MUST FOLLOW THESE DESIGN STANDARDS:**
