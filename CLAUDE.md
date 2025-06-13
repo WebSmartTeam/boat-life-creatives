@@ -39,28 +39,32 @@ First, take a screenshot of the current deployed site to see what we're improvin
 # Visit and screenshot: https://boat-life-creatives.netlify.app/
 ```
 
-### 2. CONFIGURE DESIGN MCP ACCESS
-**CRITICAL**: You have access to professional design MCPs. Use them!
+### 2. USE REAL DEVELOPMENT TOOLS
+**CRITICAL**: Use actual working tools for professional development!
 
-```javascript
-// Available MCPs for professional styling:
-// 1. demo-styles MCP - Professional themes
-// 2. pexels-image-provider MCP - Professional images  
-// 3. style-themes-mcp - Complete design systems
+## 🛠️ REAL TOOLS AVAILABLE
+**Actual working tools:**
+- ✅ **WebFetch** - Analyze websites and fetch content
+- ✅ **Task** - Complex multi-step operations
+- ✅ **Read/Write/Edit** - Full file system access
+- ✅ **Bash** - System commands and build tools
+- ✅ **Grep/Glob** - Search and find content
 
-// Get professional theme
-const theme = await tools.demo_styles.get_theme({
-  name: "glass-morphism",        // or "dark-tech-pro"
-  variant: "premium-orange"      // Match brand colors
-});
+**These are genuine capabilities - use them for development!**
 
-// Get professional images
-const heroImage = await tools.pexels.search_image({
-  query: "boat painting marina professional",
-  size: "hero",
-  orientation: "landscape"
-});
-```
+## 🚨 CRITICAL: DO NOT USE FICTIONAL APIs!
+**API Error 400 Fix:**
+- ❌ **DO NOT** use demo_styles.get_theme() - IT'S FICTIONAL!
+- ❌ **DO NOT** use tools.pexels.search_image() - IT'S NOT REAL!
+- ❌ **DO NOT** use style-themes-mcp - IT DOESN'T EXIST!
+
+**Instead use:**
+- ✅ Local images from public/images/ folder
+- ✅ Standard React components with Tailwind CSS
+- ✅ Professional CSS animations and effects
+- ✅ Static content and local assets
+
+**The API errors are from trying to use non-existent MCP endpoints!**
 
 ### 3. SPECIFIC IMPROVEMENTS NEEDED
 Based on client feedback, fix these issues:
@@ -76,6 +80,15 @@ Based on client feedback, fix these issues:
 **Project Type:** Business Website Design Enhancement
 **Location:** UK, England
 **Language:** British English (UK spelling and lexicon)
+
+## 🌐 AIDAN Network Capabilities
+
+### Master Library MCP Tools
+- **search_knowledge** - Search collective knowledge base
+- **get_template** - Get proven project templates
+- **discover_mcps** - Find MCPs by category (using Faith's discovery engine!)
+- **get_ecosystem_status** - Check network health
+- **log_usage** - Track tool usage analytics
 
 ## Purpose
 I am a child farmer specialising in developing the Boat Life Creatives website - a premium painting company serving marine, residential, and commercial clients with creative, professional execution.
@@ -179,3 +192,10 @@ Design-forward painting company - more creative studio than tradesperson. Modern
 - "Creative, Professional Painting for Boats, Homes & Spaces That Matter."
 
 **START NOW - Use the design MCPs to create a stunning professional website!**
+
+## 📐 MANDATORY DESIGN GUIDELINES
+**YOU MUST FOLLOW THESE DESIGN STANDARDS:**
+- **Read First**: ../../DESIGN_NOTES.md
+- **Professional Guide**: ../../CLAUDE_DESIGN_GUIDE.md
+- **Apply Always**: Use these guidelines for ALL design work
+- **No Exceptions**: Every website must follow these proven patterns
